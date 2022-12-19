@@ -1,0 +1,19 @@
+{
+    "head": {
+        "title": "Lemang Aisnor"
+    },
+    "hero": {
+        "title": "Lemang Aisnor Paya Jaras",
+        "desc": "Aisnor Lemang ditubuhkan pada tahun 2020. Beroperasi di sekitar Paya Jaras pada bulan puasa.",
+        "info": "Info"
+    },
+    "about": {
+        "title": "Mengenai Kami",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!",
+        "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg"
+    },
+    "product": {
+        "title": "Produk Kami",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!"
+    }
+}
