@@ -4,16 +4,36 @@
     },
     "hero": {
         "title": "Lemang Aisnor Paya Jaras",
-        "desc": "Aisnor Lemang ditubuhkan pada tahun 2020. Beroperasi di sekitar Paya Jaras pada bulan puasa.",
+        "desc": "Lemang Aisnor ditubuhkan pada tahun 2020. Beroperasi di sekitar Paya Jaras pada bulan puasa.",
         "info": "Info"
     },
     "about": {
+        "mini_title": "TENTANG",
         "title": "Mengenai Kami",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
         "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg"
     },
     "product": {
+        "mini_title": "PRODUK",
         "title": "Produk Kami",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!"
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!",
+        "img": [
+            {
+                "id": 1,
+                "src": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671540288/aisnor/s6yzduhkbcc6qqalkiqz.webp"
+            },
+            {
+                "id": 2,
+                "src": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671540288/aisnor/pdmv8errfwc1ubuc6f4x.jpg"
+            },
+            {
+                "id": 3,
+                "src": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671540288/aisnor/l8jtxxu99xioqcl38ev5.jpg"
+            }
+        ]
+    },
+    "testimony": {
+        "mini_title": "TESTIMONI",
+        "title": "Testimoni Pelanggan Kami"
     }
 }
