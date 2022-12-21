@@ -1,12 +1,12 @@
 <!-- START Project Title -->
 ## 📢 Project Title
-Develop A Landing Page For Client.
+Develop A Landing Page For A Client.
 <br /><br />
 <!-- END Project Title -->
 
 <!-- START Table Of Contents -->
 ## 📌 Table Of Contents
-Here is the table of contents of our project. You may want use it to explore the whole project. 🛵💨
+Here is the table of contents of our project. Use it to explore the whole project. 🛵💨
 
 - [Project Title](#-project-title)
 - [Table Of Contents](#-table-of-contents)
