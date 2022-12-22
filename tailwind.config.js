@@ -10,7 +10,7 @@ tailwindConfig = {
         extend: {
             colors: {
                 "clr-light-primary": "#FAFAFA",
-                "clr-light-secondary": "#F5F5F5",
+                "clr-light-secondary": "#f6f6f6",
                 "clr-light-tertiary": "#28553B",
                 "clr-green-primary": "#24C166",
                 "clr-green-seondary": "#21B45E",
