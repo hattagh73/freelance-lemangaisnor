@@ -2,21 +2,140 @@
     "head": {
         "title": "Lemang Aisnor"
     },
+    "footer": {
+        "co_desc": "Lorem ipsum dolor sit amet consectetur. Quis vitae cum porta varius tempor vel laoreet id elit.",
+        "pg_links": {
+            "title": "Halaman",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "Utama"
+                },
+                {
+                    "id": 2,
+                    "name": "Tentang"
+                },
+                {
+                    "id": 3,
+                    "name": "Produk"
+                },
+                {
+                    "id": 4,
+                    "name": "Testimoni"
+                }
+            ]
+        },
+        "service": {
+            "title": "Menjual",
+            "services": [
+                {
+                    "id": 1,
+                    "name": "Lemang"
+                },
+                {
+                    "id": 2,
+                    "name": "Ketupat"
+                },
+                {
+                    "id": 3,
+                    "name": "Air Tebu"
+                }
+            ]
+        },
+        "lokasi": {
+            "title": "Lokasi Kedai",
+            "full_address": [
+                {
+                    "id": 1,
+                    "address": "Jalan Tempayan Emas 1"
+                },
+                {
+                    "id": 2,
+                    "address": "Kampung Paya Jaras Hilir"
+                },
+                {
+                    "id": 3,
+                    "address": "40160 Shah Alam, Selangor"
+                }
+            ]
+        },
+        "schedules": {
+            "title": "Waktu Operasi",
+            "schedule": [
+                {
+                    "id": 1,
+                    "day": "Isnin - Jumaat",
+                    "time": "4:30PM - 7:00PM"
+                },
+                {
+                    "id": 2,
+                    "day": "Sabtu - Ahad",
+                    "time": "3:30PM - 7:30PM"
+                }
+            ]
+        },
+        "footnote": {
+            "copyright": "© Aisnor Lemang 2022",
+            "sos_med": {
+                "title": "Sosial Media",
+                "links":[
+                    {
+                        "id": 1,
+                        "title": "Facebook"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Instagram"
+                    },
+                    {
+                        "id": 3,
+                        "title": "WhatsApp"
+                    }
+                    
+                ]
+            }
+        },
+        "made": {
+            "title": "Kraftangan",
+            "link": {
+                "name": "hattaltd",
+                "url": "http://hatta.vercel.app/"
+            }
+        }
+    },
     "hero": {
         "title": "Lemang Aisnor Paya Jaras",
         "desc": "Lemang Aisnor ditubuhkan pada tahun 2020. Beroperasi di sekitar Paya Jaras pada bulan puasa.",
         "info": "Info"
     },
     "about": {
-        "mini_title": "TENTANG",
+        "mini_title": "Tentang",
         "title": "Mengenai Kami",
         "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
-        "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg"
+        "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg",
+        "sells": [
+            {
+                "id": 1,
+                "title": "Menjual Ketupat"
+            },
+            {
+                "id": 2,
+                "title": "Menjual Lemang"
+            },
+            {
+                "id": 3,
+                "title": "Menjual Air Tebu"
+            },
+            {
+                "id": 4,
+                "title": "Mengambil Tempahan"
+            }
+        ]
     },
     "product": {
-        "mini_title": "PRODUK",
+        "mini_title": "Produk",
         "title": "Produk Kami",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit, accusantium aspernatur? Voluptas deleniti ex nihil blanditiis ullam!",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
         "img": [
             {
                 "id": 1,
@@ -33,7 +152,27 @@
         ]
     },
     "testimony": {
-        "mini_title": "TESTIMONI",
-        "title": "Testimoni Pelanggan Kami"
+        "mini_title": "Testimoni",
+        "title": "Testimoni Pelanggan Kami",
+        "testimonials": [
+            {
+                "id": 1,
+                "name": "Abdul Habib",
+                "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813745/aisnor/g6hi5ac70ghkrebx9u2e.png",
+                "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
+            },
+            {
+                "id": 2,
+                "name": "Muhammad Ali",
+                "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813745/aisnor/emoiggfjkiyysj8fqa1v.png",
+                "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
+            },
+            {
+                "id": 3,
+                "name": "Selena Gomez",
+                "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813747/aisnor/hh34dzsee2ejxnrg8vs2.png",
+                "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
+            }
+        ]
     }
 }

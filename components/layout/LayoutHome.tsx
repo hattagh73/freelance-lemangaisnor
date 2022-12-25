@@ -1,3 +1,6 @@
+//* IMPORT: types
+import { iFooter } from '../../config/data-type';
+
 //* IMPORT: react-ts
 import { ReactNode } from 'react';
 
@@ -6,18 +9,21 @@ import { Header, Footer } from '../components';
 
 //* DECLARE: type
 type ChildrenProps = {
-    children?: ReactNode
+    children?: ReactNode;
+    footer: iFooter;
 }
 
 //* START: layout
-const LayoutHome = ({ children }: ChildrenProps) => {
+const LayoutHome = ({ children, footer }: ChildrenProps) => {
     return (
         <>
             <Header />
             <main>
                 { children }
             </main>
-            <Footer />
+            <Footer
+                footer={footer}
+            />
         </>
     )
 }
