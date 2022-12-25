@@ -8,6 +8,7 @@ import { iSAbout } from '../../config/data-type';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeInDown, ketupat, light } from '../../config/framer-variants';
 
+// IMPORT: classnames-package
 import classNames from 'classnames';
 
 //* START: section-about
@@ -16,37 +17,30 @@ const SAbout = ({about}: iSAbout) => {
         <section
             id="s_contact"
             className={classNames(
-                "py-52 relative",
-                "",
+                "relative",
+                "pt-32 pb-28"
+                // "pt-32 pb-72",
             )}
         >
-            <span className="absolute top-0 -left-[28%] block w-[1000px] h-full">
-                <Image 
-                    alt="Large Blob SVG"
-                    src="/images/lg-blob-2.svg"
-                    fill
-                    className=""
-                />
-            </span>
-
+            
             <div
                 className={classNames(
-                    "c-container grid grid-cols-2",
+                    "c-container grid grid-cols-12 gap-x-5 relative z-10",
                 )} 
             >
                 
-                <div className="self-center">
-                    <h4 className="text-sm font-medium text-clr-green-primary">Tentang</h4>
+                <div className="self-center col-span-5">
+                    <h4 className="mini-title">{about.mini_title}</h4>
                     <h1
                         className={classNames(
-                            "text-3xl font-semibold"
+                            "main-title"
                         )}
                     >{about.title}
                     </h1>
 
                     <p
                         className={classNames(
-                            "mt-10 text-clr-light-tertiary"
+                            "mt-10 text-clr-light-tertiary max-w-[90%]"
                         )}
                     >{about.desc}
                     </p>
@@ -54,7 +48,10 @@ const SAbout = ({about}: iSAbout) => {
                 </div>
 
                 <span
-                    className="relative overflow-hidden rounded-2xl block w-[40%] h-80 justify-self-end drop-shadow-md"
+                    className={classNames(
+                        "relative overflow-hidden rounded-xl col-start-9 col-span-4 w-[70%] h-72 justify-self-end",
+                        // "justify-self-center"
+                    )}
                 >
                     <Image 
                         alt="An Image Of Lemang"      
@@ -63,6 +60,40 @@ const SAbout = ({about}: iSAbout) => {
                         className="object-cover"       
                     />
                 </span>
+
+            </div>
+
+            <div className="pt-10 bg-clr-light-primary">
+
+                <div className="c-container grid grid-cols-4 gap-x-10 ">
+
+                    {about.sells.map(i =>
+                        <div 
+                            key={i.id}
+                            className={classNames(
+                                "rounded-md py-4 px-5 text-center",
+                                "border border-clr-dark-primary/5"
+                            )}
+                        >
+                            <span 
+                                className={classNames(
+                                    "w-8 h-8 rounded-full text-sm",
+                                    // "text-clr-green-primary bg-clr-green-primary/10",  
+                                    "bg-clr-green-primary text-clr-light-primary",
+                                    "inline-flex justify-center items-center"
+                                )}
+                            >{i.id}
+                            </span>
+
+                            <h1 
+                                className="mt-5"
+                            >{i.title}
+                            </h1>
+
+                        </div>
+                    )}
+                    
+                </div>
 
             </div>
 
