@@ -10,15 +10,15 @@ tailwindConfig = {
         extend: {
             colors: {
                 "clr-light-primary": "#FAFAFA",
-                "clr-light-secondary": "#f6f6f6",
-                "clr-light-tertiary": "#28553B",
-                "clr-green-primary": "#24C166",
+                "clr-light-secondary": "#F4F4F4",
+                "clr-light-tertiary": "#848683",
+                "clr-green-primary": "#08C05A",
                 "clr-green-seondary": "#21B45E",
                 "clr-green-tertiary": "#1EA657",
-                "clr-dark-primary": "#0A371D",
+                "clr-dark-primary": "#0e120c",
             },
             fontFamily: {
-                poppins: ["Poppins", "sans-serif"],
+                inter: ["Inter", "sans-serif"],
             },
             fontSize: {
                 "10xl": ["10rem", { lineHeight: "1" }],
