@@ -1,4 +1,7 @@
+//* IMPORT: react-hooks
+import { useState, useEffect } from 'react';
 
+// IMPORT: react-scroll
 import { Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 //* IMPORT: components
@@ -9,29 +12,51 @@ import classNames from 'classnames';
 
 //* START: header
 const Header = () => {
+
+    const [header, setHeader] = useState<boolean>(false);
+
+    const headerScrollEvent = () => {
+        window.scrollY > 80 ? setHeader(true) : setHeader(false)
+        return
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', headerScrollEvent);
+
+        return () => window.removeEventListener('scroll', headerScrollEvent);
+    }, [])
+
     return (
         <header
             className={classNames(
-                "bg-clr-light-primary",
                 "fixed bottom-0 w-full z-50",
                 "lg:top-0 lg:bottom-auto",
-                "py-2 lg:py-2"
+                "py-2 lg:py-2",
+                {"lg:bg-clr-light-primary":header},
+                "text-clr-light-primary",
+                {"text-clr-dark-primary":header},
+                {"lg:shadow lg:shadow-clr-dark-primary/10":header}
             )}
         >
+
             <nav
                 className={classNames(
-                    "c-container lg:flex justify-between lg:items-center text-clr-dark-primary",
+                    "c-container-header",
+                    "lg:flex justify-between lg:items-center",
                 )}
             >
+                {/* START: nav-logo */}
                 <Logo 
                     logo_wrap="hidden lg:inline-flex h-11 w-20"
-                />
+                />{/* END: nav-logo */}
 
+                {/* START: nav-anchor-links */}
                 <ul
                     className={classNames(
-                        "flex justify-between lg:gap-x-8",
+                        "flex justify-between lg:gap-x-6 text-sm",
                     )}
                 >
+
                     <li>Utama</li>
                     <li>Tentang</li>
                     <li>Produk</li>
@@ -46,20 +71,12 @@ const Header = () => {
                                 className="absolute left-1/2 -bottom-1 w-[0.4rem] h-[0.4rem] bg-clr-green-primary rounded-full"
                             /> */}
                         </Link> 
-                        
                     </li>
-                </ul>
 
-                {/* <ul
-                    className={classNames(
-                        "hidden",
-                        "lg:flex gap-x-8"
-                    )}
-                >
-                    <li>Link 1</li>
-                    <li>Link 1</li>
-                </ul> */}
+                </ul>{/* END: nav-anchor-links */}
+
             </nav>
+
         </header>
     )
 }
