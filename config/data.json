@@ -104,9 +104,25 @@
         }
     },
     "hero": {
-        "title": "Lemang Aisnor Paya Jaras",
-        "desc": "Lemang Aisnor ditubuhkan pada tahun 2020. Beroperasi di sekitar Paya Jaras pada bulan puasa.",
-        "info": "Info"
+        "title": "Selamat datang ke Aisnor Lemang Paya Jaras",
+        "desc": "Marilah singgah ke kedai kami, antara lemang yang terbaik di Paya Jaras.",
+        "info": "Info",
+        "ais_lmg": "Aisnor Lemang",
+        "socials": [
+            {
+                "id": 1,
+                "name": "Facebook"
+            },
+            {
+                "id": 2,
+                "name": "Instagram"
+            },
+            {
+                "id": 3,
+                "name": "WhatsApp"
+            }
+        ],
+        "since": "Sejak 2020"
     },
     "about": {
         "mini_title": "Tentang",
@@ -116,19 +132,23 @@
         "sells": [
             {
                 "id": 1,
-                "title": "Menjual Ketupat"
+                "title": "Ketupat",
+                "desc": "Kami menjual ketupat"
             },
             {
                 "id": 2,
-                "title": "Menjual Lemang"
+                "title": "Lemang",
+                "desc": "Kami menjual lemang"
             },
             {
                 "id": 3,
-                "title": "Menjual Air Tebu"
+                "title": "Air Tebu",
+                "desc": "Kami menjual air tebu"
             },
             {
                 "id": 4,
-                "title": "Mengambil Tempahan"
+                "title": "Tempahan",
+                "desc": "Kami mengambil tempahan"
             }
         ]
     },
@@ -157,13 +177,13 @@
         "testimonials": [
             {
                 "id": 1,
-                "name": "Abdul Habib",
+                "name": "Habib Kadir",
                 "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813745/aisnor/g6hi5ac70ghkrebx9u2e.png",
                 "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
             },
             {
                 "id": 2,
-                "name": "Muhammad Ali",
+                "name": "Firdaus Jusaini",
                 "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813745/aisnor/emoiggfjkiyysj8fqa1v.png",
                 "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
             },
@@ -172,7 +192,20 @@
                 "name": "Selena Gomez",
                 "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671813747/aisnor/hh34dzsee2ejxnrg8vs2.png",
                 "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
+            },
+            {
+                "id": 4,
+                "name": "Tajol Iskandar",
+                "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1672040127/aisnor/uvyqagtewmnnfjqdwcei.png",
+                "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
+            },
+            {
+                "id": 5,
+                "name": "Syazani Yadiy",
+                "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1672040126/aisnor/p5wtq77ccogs4o9xxobg.png",
+                "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates vero nulla maiores, similique magni. Sapiente voluptates vero nulla maiores, similique magni."
             }
+            
         ]
     }
 }
