@@ -24,6 +24,22 @@ export const fadeInDown = {
     }
 }
 
+export const fadeInUpwards = {
+    initial: {
+        y: 170,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        // transition: { type: 'spring', velocity: 2 }
+        transition: { type: 'tween', duration: 1.2 },
+        // transition: { ease: 'easeInOut', duration: 0.65 } 
+        // transition: { type: 'tween', duration: 0.1 } ori
+        // transition:{ type: "spring", stiffness: 280, }
+    }
+}
+
 // "linear"
 // "easeIn", "easeOut", "easeInOut"
 // "circIn", "circOut", "circInOut"
