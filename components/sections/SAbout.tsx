@@ -63,39 +63,50 @@ const SAbout = ({about}: iSAbout) => {
 
             </div>
 
-            <div className="pt-10 bg-clr-light-primary">
+            {/* START: parent-selling */}           
+            <div className="pt-14 bg-clr-light-primary">
 
-                <div className="c-container grid grid-cols-4 gap-x-10 ">
+                <div className="c-container grid grid-cols-4 gap-x-24">
 
+                    {/* START: small-card */}
                     {about.sells.map(i =>
                         <div 
                             key={i.id}
                             className={classNames(
-                                "rounded-md py-4 px-5 text-center",
-                                "border border-clr-dark-primary/5"
+                                "border border-clr-dark-primary/10",
+                                "rounded relative",
+                                "text-center pt-8 pb-4"
                             )}
                         >
-                            <span 
+
+                            <div
                                 className={classNames(
-                                    "w-8 h-8 rounded-full text-sm",
-                                    // "text-clr-green-primary bg-clr-green-primary/10",  
-                                    "bg-clr-green-primary text-clr-light-primary",
-                                    "inline-flex justify-center items-center"
+                                    "absolute -top-[20%] left-[40%]",
+                                    "bg-clr-green-primary text-clr-light-primary rounded-full",
+                                    "w-9 h-9 inline-flex justify-center items-center",
+                                    "outline outline-1 outline-offset-2 outline-clr-dark-primary/10"
                                 )}
                             >{i.id}
-                            </span>
-
-                            <h1 
-                                className="mt-5"
+                            </div>
+                            
+                            <h4
+                                className="font-medium"
                             >{i.title}
-                            </h1>
+                            </h4>
+
+                            <p 
+                                className="text-clr-light-tertiary text-sm mt-2"
+                            >{i.desc}
+                            </p>
+                            
+                            
 
                         </div>
-                    )}
+                    )}{/* END: small-card */}
                     
                 </div>
 
-            </div>
+            </div>{/* START: parent-selling */}  
 
         </section>
     )

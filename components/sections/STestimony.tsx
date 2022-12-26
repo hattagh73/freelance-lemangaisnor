@@ -80,7 +80,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
                                     {i.desc}
                                 </p>
 
-                                <span className="w-20 h-20 inline-block rounded-full order-1 relative">
+                                <span className="w-28 h-28 inline-block rounded-full order-1 relative">
                                     <Image 
                                         alt="User Profile Picture Illustration"
                                         src={i.img}

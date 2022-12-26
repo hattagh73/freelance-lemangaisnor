@@ -6,7 +6,7 @@ import { iSHero } from '../../config/data-type';
 
 //* IMPORT: framer-motion
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeInDown, ketupat, light } from '../../config/framer-variants';
+import { staggerContainer, fadeInDown, fadeInUpwards, ketupat, light } from '../../config/framer-variants';
 
 // IMPORT: classnames-package
 import classNames from 'classnames';
@@ -23,6 +23,7 @@ const SHero = ({hero}: iSHero) => {
                 "text-clr-light-primary",
                 "pt-6",
                 "lg:pt-0 lg:pb-0",
+                "rounded-bl-3xl rounded-br-3xl overflow-hidden"
             )}
         >
             {/* layer-img-lemang */}
@@ -30,7 +31,7 @@ const SHero = ({hero}: iSHero) => {
                 alt="Hero Image"
                 src="https://res.cloudinary.com/dltslq5fh/image/upload/v1671904279/aisnor/dnlb43kumipkhdz4bbb5.jpg"
                 fill
-                className="absolute -z-0"
+                className="absolute object-cover -z-0"
             />
 
             {/* layer-overlay */}
@@ -40,98 +41,95 @@ const SHero = ({hero}: iSHero) => {
             <div
                 className={classNames(
                     "c-container",
-                    // "bg-clr-green-primary",
+                    // "border",
                     "rounded-lg",
-                    "py-6 px-6", "lg:py-44 lg:px-10",
+                    "py-6 px-6", "lg:pt-40 lg:pb-44 lg:px-10",
                     // "grid grid-cols-1", "lg:place-items-center",
                     "relative z-0",
                     // "shadow-lg shadow-clr-dark-primary/10"
                 )}
             >
 
-                <motion.div variants={fadeInDown} className="grid grid-cols-1 lg:place-items-center">
+                <motion.div 
+                    variants={fadeInDown} 
+                    className={classNames(
+                        "grid grid-cols-1 lg:place-items-center",
+                        "lg:text-center"
+                    )}
+                >
+
                     <h1
-                        
                         className={classNames(
-                            "font-semibold",
+                            "font-medium",
                             "text-3xl",
-                            "lg:text-5xl"
+                            "lg:text-7xl lg:max-w-[80%]"
                         )}  
                     >{hero.title}
                     </h1>
                     
                     <p
-                        
                         className={classNames(
-                            "my-12", "lg:text-center lg:my-16",
-                            "lg:text-lg",
-                            "lg:max-w-[40%]"
+                            "my-12", "lg:text-center",
+                            "lg:mt-36 lg:mb-7",
+                            "lg:text-base",
+                            "lg:max-w-[100%]"
                         )}  
                     >{hero.desc}
                     </p>
 
-                    <button
-                        
-                        className={classNames(
-                            "rounded-md py-3 px-16 font-medium",
-                            // "bg-clr-green-primary text-clr-light-primary",
-                            "border-2 border-clr-light-primary"
-                            
-                        )}  
-                    >{hero.info}
-                    </button>
+                    <div>
+                        <button
+                            className={classNames(
+                                "rounded-full py-2 px-12 font-medium",
+                                "bg-clr-light-primary text-clr-dark-primary hover:bg-clr-light-primary/90",
+                            )}  
+                        >{hero.info}
+                        </button>
+                    </div>
+
                 </motion.div>
 
-                {/* img-light */}
-                {/* <motion.span
-                    variants={light}
-                    className="absolute bottom-0 left-[2%] hidden lg:inline w-48 h-48"
-                >
-                    <Image 
-                        alt="Illustration Light SVG"
-                        src={'/images/light.svg'}
-                        fill
-                        sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
-                    />
-                </motion.span> */}
-                
-                {/* img-ketupat */}
-                {/* <motion.span
-                    variants={ketupat}
-                    className="absolute top-0 right-[2%] w-14 h-14 lg:w-48 lg:h-48"
-                >
-                    <Image 
-                        alt="Illustration Ketupat SVG"
-                        src={'/images/ketupat.svg'}
-                        fill
-                        sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
-                    />
-                </motion.span> */}
-
             </div>{/* END: hero-wrap-grid */}
+            
+            {/* START: hero-footnote */}
+            <div 
+                className={classNames(
+                    "pb-5 pt-12 lg:py-4 relative z-0",
+                    // "bg-clr-dark-primary/70", nice-blur
+                    // "backdrop-blur-lg" nice-blur
+                )}
+            >
 
-            <div className={classNames(
-                // "border border-clr-green-primary",
-                "py-4 px-7",
-                "relative z-0 flex",
-                "flex-row justify-between",
-                "text-clr-light-primary text-xs font-light",
-                "bg-black/10 backdrop-blur-xl"
-            )}>
-
-                <p className="">Lemang Aisnor</p>
-
-                <ul className=" flex gap-x-7">
-                    {["Facebook", "Instragram", "WhatsApp"].map((i,index) =>
-                        <li
-                            key={index}
-                        >{i}</li>
+                <motion.div 
+                    variants={fadeInUpwards} 
+                    className={classNames(
+                        // "border border-clr-green-primary",
+                        "c-container-header",
+                        "flex flex-wrap justify-between",
+                        "lg:flex-row lg:justify-between",
+                        "text-clr-light-primary text-[10px] lg:text-xs font-light",
+                        "gap-y-10"
                     )}
-                </ul>
+                >
+                    <p className="order-2 basis-1/2">{hero.ais_lmg}</p>
 
-                <p className="">Sejak 2020</p>
+                    <ul className={classNames(
+                        "order-1 basis-full lg:basis-auto justify-center flex"
+                    )}>
+                        {hero.socials.map(i =>
+                            <li
+                                key={i.id}
+                            >
+                                <a className="hover:text-clr-green-primary">{i.name}</a>
+                                {i.id !== 3 ? <span className="mx-1">•</span> : null}
+                            </li>
+                        )}
+                    </ul>
 
-            </div>
+                    <p className="order-3 justify-self-end">{hero.since}</p>
+                </motion.div>
+
+            </div>{/* END: hero-footnote */}
 
         </motion.section>
     )

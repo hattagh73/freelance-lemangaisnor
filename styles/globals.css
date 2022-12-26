@@ -52,16 +52,16 @@
         @apply max-w-[1296px] mx-4 lg:mx-auto;
     }
 
-    /* .c-container-header {
-        @apply max-w-7xl mx-4 lg:mx-auto;
-    } */
+    .c-container-header {
+        @apply max-w-[1800px] mx-4 lg:mx-auto;
+    }
 
     .mini-title {
         @apply text-sm font-medium text-clr-green-primary;
     }
 
     .main-title {
-        @apply text-4xl font-semibold;
+        @apply text-5xl font-medium;
     }
     
 }
