@@ -78,6 +78,12 @@ export interface iHero {
     title: string;
     desc: string;
     info: string;
+    ais_lmg: string;
+    socials: {
+        id: number;
+        name: string;
+    }[]
+    since: string;
 }
 
 //* TYPE: component-section-about
@@ -93,6 +99,7 @@ export interface iAbout {
     sells: {
         id: number;
         title: string;
+        desc: string;
     }[]
 }
 
