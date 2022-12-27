@@ -69,10 +69,9 @@ const SHero = ({hero}: iSHero) => {
                     
                     <p
                         className={classNames(
-                            "my-12", "lg:text-center",
+                            "my-12",
                             "lg:mt-36 lg:mb-7",
-                            "lg:text-base",
-                            "lg:max-w-[100%]"
+                            "lg:text-center lg:text-base",
                         )}  
                     >{hero.desc}
                     </p>
@@ -94,7 +93,7 @@ const SHero = ({hero}: iSHero) => {
             {/* START: hero-footnote */}
             <div 
                 className={classNames(
-                    "pb-5 pt-12 lg:py-4 relative z-0",
+                    "pb-2 lg:pb-5 pt-12 lg:py-4 relative z-0",
                     // "bg-clr-dark-primary/70", nice-blur
                     // "backdrop-blur-lg" nice-blur
                 )}
@@ -103,18 +102,17 @@ const SHero = ({hero}: iSHero) => {
                 <motion.div 
                     variants={fadeInUpwards} 
                     className={classNames(
-                        // "border border-clr-green-primary",
+                        "text-clr-light-primary text-xs lg:text-xs font-light",
                         "c-container-header",
-                        "flex flex-wrap justify-between",
+                        "flex justify-center flex-wrap",
                         "lg:flex-row lg:justify-between",
-                        "text-clr-light-primary text-[10px] lg:text-xs font-light",
-                        "gap-y-10"
+                        "gap-y-2 gap-x-2"
                     )}
                 >
-                    <p className="order-2 basis-1/2">{hero.ais_lmg}</p>
+                    <p className="order-1">{hero.ais_lmg}</p>
 
                     <ul className={classNames(
-                        "order-1 basis-full lg:basis-auto justify-center flex"
+                        "order-3 basis-full lg:basis-auto justify-center flex"
                     )}>
                         {hero.socials.map(i =>
                             <li
@@ -126,7 +124,7 @@ const SHero = ({hero}: iSHero) => {
                         )}
                     </ul>
 
-                    <p className="order-3 justify-self-end">{hero.since}</p>
+                    <p className="order-2">{hero.since}</p>
                 </motion.div>
 
             </div>{/* END: hero-footnote */}
