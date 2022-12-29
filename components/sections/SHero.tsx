@@ -41,12 +41,10 @@ const SHero = ({hero}: iSHero) => {
             <div
                 className={classNames(
                     "c-container",
-                    // "border",
                     "rounded-lg",
-                    "py-6 px-6", "lg:pt-40 lg:pb-44 lg:px-10",
-                    // "grid grid-cols-1", "lg:place-items-center",
+                    "py-6",
+                    "lg:pt-40 lg:pb-44 lg:px-10",
                     "relative z-0",
-                    // "shadow-lg shadow-clr-dark-primary/10"
                 )}
             >
 
