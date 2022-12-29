@@ -25,11 +25,17 @@ const SAbout = ({about}: iSAbout) => {
             
             <div
                 className={classNames(
-                    "c-container grid grid-cols-12 gap-x-5 relative z-10",
+                    "c-container grid relative z-10",
+                    "grid-cols-1",
+                    "lg:grid-cols-12 lg:gap-x-5"
                 )} 
             >
                 
-                <div className="self-center col-span-5">
+                <div 
+                    className={classNames(
+                        "lg:self-center lg:col-span-5"
+                    )}
+                >
                     <h4 className="mini-title">{about.mini_title}</h4>
                     <h1
                         className={classNames(
@@ -49,8 +55,9 @@ const SAbout = ({about}: iSAbout) => {
 
                 <span
                     className={classNames(
-                        "relative overflow-hidden rounded-xl col-start-9 col-span-4 w-[70%] h-72 justify-self-end",
-                        // "justify-self-center"
+                        "relative overflow-hidden rounded-md",
+                        "w-full h-60",
+                        "lg:col-start-9 lg:col-span-4 lg:justify-self-end lg:w-[70%] lg:h-72",
                     )}
                 >
                     <Image 
@@ -64,9 +71,15 @@ const SAbout = ({about}: iSAbout) => {
             </div>
 
             {/* START: parent-selling */}           
-            <div className="pt-14 bg-clr-light-primary">
+            <div className="pt-4 bg-clr-light-primary">
 
-                <div className="c-container grid grid-cols-4 gap-x-24">
+                <div 
+                    className={classNames(
+                        "c-container grid overflow-x-auto pt-6 pb-2",
+                        "grid-cols-[188px_188px_188px_188px] gap-x-5",
+                        "lg:grid-cols-4 lg:gap-x-6"
+                    )}
+                >
 
                     {/* START: small-card */}
                     {about.sells.map(i =>
@@ -75,10 +88,12 @@ const SAbout = ({about}: iSAbout) => {
                             className={classNames(
                                 "border border-clr-dark-primary/10",
                                 "rounded relative",
-                                "text-center pt-8 pb-4"
+                                "text-center",
+                                "pt-8 pb-4"
                             )}
                         >
 
+                            {/* rounded-label-number */}
                             <div
                                 className={classNames(
                                     "absolute -top-[20%] left-[40%]",
