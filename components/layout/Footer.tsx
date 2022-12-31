@@ -120,7 +120,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     </h1>
 
                     <ul
-                        className="mt-5 text-clr-light-tertiary"
+                        className="mt-5 text-clr-light-tertiary text-sm"
                     >
                         {footer.lokasi.full_address.map(i =>
                             <li
@@ -150,7 +150,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     </h1>
 
                     <ul
-                        className="mt-5 text-clr-light-tertiary"
+                        className="mt-5 text-clr-light-tertiary text-sm"
                         role="list"
                     >
                         {footer.schedules.schedule.map(i =>
