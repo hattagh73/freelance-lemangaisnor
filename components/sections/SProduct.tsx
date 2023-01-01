@@ -25,8 +25,9 @@ const SProduct = ({product}: iSProduct) => {
             {/* START: product-container */}
             <div
                 className={classNames(
-                    "c-container",
-                    "grid grid-cols-2",
+                    "c-container grid",
+                    "grid-cols-1",
+                    "lg:grid-cols-2",
                     "gap-x-24"
                 )}
             >
