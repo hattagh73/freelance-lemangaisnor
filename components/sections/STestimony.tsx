@@ -74,12 +74,17 @@ const STestimony = ({testimony}: iSTestimony ) => {
                                 key={i.id}
                                 className="flex flex-col items-center text-center"
                             >
+                                {/* user-testimony */}
                                 <p
-                                    className="my-10 max-w-[45%] text-clr-light-tertiary order-3"
+                                    className={classNames(
+                                        "my-10 text-clr-light-tertiary order-3",
+                                        "lg:max-w-[45%]"
+                                    )}
                                 >
                                     {i.desc}
                                 </p>
 
+                                {/* user-img */}
                                 <span className="w-28 h-28 inline-block rounded-full order-1 relative">
                                     <Image 
                                         alt="User Profile Picture Illustration"
@@ -88,6 +93,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
                                     />
                                 </span>
 
+                                {/* user-name */}
                                 <h1 className="mt-4 order-2">{i.name}</h1>
                             </SwiperSlide>
                         )}
