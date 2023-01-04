@@ -35,7 +35,9 @@ const SProduct = ({product}: iSProduct) => {
                 {/* START: product-col-1 */}
                 <div
                     className={classNames(
-                        "order-2 flex flex-col items-end text-end"
+                        "order-1 lg:order-2",
+                        "flex flex-col",
+                        "lg:items-end lg:text-end"
                     )}
                 >
                     <h4 className="mini-title">
@@ -51,7 +53,8 @@ const SProduct = ({product}: iSProduct) => {
 
                     <p
                         className={classNames(
-                            "mt-10 text-clr-light-tertiary max-w-[80%] "
+                            "mt-10 text-clr-light-tertiary",
+                            "lg:max-w-[80%]"
                         )}
                     >{product.desc}
                     </p>
@@ -61,7 +64,7 @@ const SProduct = ({product}: iSProduct) => {
                 {/* START: product-col-2 */}
                 <div
                     className={classNames(
-                        "order-1",
+                        "order-2 lg:order-1",
                         "grid grid-cols-2 grid-rows-[200px_200px]",
                         "gap-1",
                     )}
