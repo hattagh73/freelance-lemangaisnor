@@ -37,7 +37,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
             >
                 {/* START: col-1 */}
                 <div
-                    className="col-span-12 text-center"
+                    className="col-span-12 lg:text-center"
                 >
 
                     <h4 
