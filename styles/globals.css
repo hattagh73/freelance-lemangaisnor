@@ -5,6 +5,30 @@
 @layer base {
     
     @font-face {
+        font-family: 'Cabinet';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url('/fonts/CabinetGrotesk-Medium.otf');
+    }
+
+    @font-face {
+        font-family: 'Cabinet';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/CabinetGrotesk-Bold.otf');
+    }
+
+    @font-face {
+        font-family: 'Cabinet';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url('/fonts/CabinetGrotesk-ExtraBold.otf');
+    }
+
+    @font-face {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 300;
@@ -57,11 +81,11 @@
     }
 
     .mini-title {
-        @apply text-sm font-medium text-clr-green-primary;
+        @apply text-base font-medium text-clr-green-primary;
     }
 
     .main-title {
-        @apply text-5xl font-medium;
+        @apply text-6xl font-extrabold font-cabinet;
     }
     
 }
