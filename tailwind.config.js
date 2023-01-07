@@ -4,7 +4,7 @@ tailwindConfig = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
-        "./styles/**/*.css"
+        "./styles/**/*.css",
     ],
     theme: {
         extend: {
@@ -19,13 +19,17 @@ tailwindConfig = {
             },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],
+                cabinet: ["Cabinet", "sans-serif"],
             },
             fontSize: {
                 "10xl": ["10rem", { lineHeight: "1" }],
             },
             screens: {
                 "2xl": "1537px",
-            }
+            },
+            // backgroundImage: {
+            //     hero: "url('/images/pattern-africa.svg')",
+            // },
         },
     },
     plugins: [
