@@ -6,7 +6,7 @@ import { iSHero } from '../../config/data-type';
 
 //* IMPORT: framer-motion
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeInDown, fadeInUpwards, ketupat, light } from '../../config/framer-variants';
+import { staggerHeroContainer, fadeInDown, fadeInUpwards, ketupat, light } from '../../config/framer-variants';
 
 // IMPORT: classnames-package
 import classNames from 'classnames';
@@ -15,7 +15,7 @@ import classNames from 'classnames';
 const SHero = ({hero}: iSHero) => {
     return (
         <motion.section
-            variants={staggerContainer}
+            variants={staggerHeroContainer}
             initial="initial"
             animate="animate"
             className={classNames(
@@ -35,16 +35,14 @@ const SHero = ({hero}: iSHero) => {
             />
 
             {/* layer-overlay */}
-            <div className="absolute inset-0 -z-0 bg-black/70"/>
+            <div className="absolute inset-0 -z-0 bg-black/75" />
 
             {/* START: hero-wrap-grid */}
             <div
                 className={classNames(
-                    "c-container",
-                    "rounded-lg",
+                    "c-container rounded-lg relative z-0",
                     "py-6",
                     "lg:pt-40 lg:pb-44 lg:px-10",
-                    "relative z-0",
                 )}
             >
 
@@ -58,9 +56,9 @@ const SHero = ({hero}: iSHero) => {
 
                     <h1
                         className={classNames(
-                            "font-medium",
+                            "font-cabinet font-bold",
                             "text-3xl",
-                            "lg:text-7xl lg:max-w-[80%]"
+                            "lg:text-7xl lg:max-w-[100%]"
                         )}  
                     >{hero.title}
                     </h1>
@@ -68,10 +66,10 @@ const SHero = ({hero}: iSHero) => {
                     <p
                         className={classNames(
                             "my-12",
-                            "lg:mt-36 lg:mb-7",
-                            "lg:text-center lg:text-base",
+                            "lg:my-16",
+                            "lg:text-center",
                         )}  
-                    >{hero.desc}
+                    >Antara lemang yang terbaik di Paya Jaras <br /> Jemput singgah ke gerai kami
                     </p>
 
                     <div>
@@ -100,7 +98,7 @@ const SHero = ({hero}: iSHero) => {
                 <motion.div 
                     variants={fadeInUpwards} 
                     className={classNames(
-                        "text-clr-light-primary text-xs lg:text-xs font-light",
+                        "text-clr-light-primary text-xs lg:text-xs",
                         "c-container-header",
                         "flex justify-center flex-wrap",
                         "lg:flex-row lg:justify-between",
@@ -110,14 +108,14 @@ const SHero = ({hero}: iSHero) => {
                     <p className="order-1">{hero.ais_lmg}</p>
 
                     <ul className={classNames(
-                        "order-3 basis-full lg:basis-auto justify-center flex"
+                        "order-3 basis-full lg:basis-auto lg:order-2 justify-center flex"
                     )}>
                         {hero.socials.map(i =>
                             <li
                                 key={i.id}
                             >
                                 <a className="hover:text-clr-green-primary">{i.name}</a>
-                                {i.id !== 3 ? <span className="mx-1">•</span> : null}
+                                {i.id !== 3 ? <span className="mx-1">·</span> : null}
                             </li>
                         )}
                     </ul>
