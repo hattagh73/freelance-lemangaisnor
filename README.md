@@ -1,6 +1,6 @@
 <!-- START Project Title -->
 ## 📢 Project Title
-Develop A Landing Page For A Client.
+Develop a landing page for a client.
 <br /><br />
 <!-- END Project Title -->
 
@@ -13,8 +13,9 @@ Here is the table of contents of our project. Use it to explore the whole projec
 - [About Project](#-about-project)
 - [Technology Stack](#-technology-stack)
 - [Screenshots](#-screenshots)
-  - [Hero Section](#hero-section)
-  - [Footer](#footer)
+  - [Full Design](#full-design)
+  - [Hero Section Design](#hero-section-design)
+  - [Footer Design](#footer-design)
 <!-- - [References](#-references) -->
 
 <a align="right" href="#-project-title">
@@ -90,14 +91,18 @@ A list of **technology stack** that we applied in this project. There are as lis
 
 <!-- START Screenshots -->
 ## 📸 Screenshots
-Some design screenshots of our project using Figma.
+Some screenshots design of the project using Figma.
 
-### Hero Section
-Various design of Hero Section
+### Full Design
+Following below is the full design of the project
+<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+
+### Hero Section Design
+Following below is the various design of hero section
 <img alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910563-e6b86b1a-6d88-471a-ad4a-e633825f65ac.jpg">
 
-### Footer
-Various design of Footer
+### Footer Design
+Following below is the various design of footer
 <img alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910800-676d15af-06a3-4b82-83a6-44a9cc61dedb.jpg">
 
 <a align="right" href="#-project-title">
