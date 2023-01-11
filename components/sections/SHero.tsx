@@ -21,9 +21,9 @@ const SHero = ({hero}: iSHero) => {
             className={classNames(
                 "bg-clr-light-secondary relative",
                 "text-clr-light-primary",
-                "pt-6",
+                "pt-6 pb-3",
                 "lg:pt-0 lg:pb-0",
-                "rounded-bl-3xl rounded-br-3xl overflow-hidden"
+                "rounded-bl-2xl rounded-br-2xl overflow-hidden"
             )}
         >
             {/* layer-img-lemang */}
@@ -31,17 +31,20 @@ const SHero = ({hero}: iSHero) => {
                 alt="Hero Image"
                 src="https://res.cloudinary.com/dltslq5fh/image/upload/v1671904279/aisnor/dnlb43kumipkhdz4bbb5.jpg"
                 fill
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
                 className="absolute object-cover -z-0"
             />
 
             {/* layer-overlay */}
-            <div className="absolute inset-0 -z-0 bg-black/75" />
+            <div className="absolute inset-0 -z-0 bg-black/70 backdrop-blur" />
 
             {/* START: hero-wrap-grid */}
             <div
                 className={classNames(
-                    "c-container rounded-lg relative z-0",
-                    "py-6",
+                    "c-container relative z-0",
+                    "py-0",
                     "lg:pt-40 lg:pb-44 lg:px-10",
                 )}
             >
@@ -49,34 +52,41 @@ const SHero = ({hero}: iSHero) => {
                 <motion.div 
                     variants={fadeInDown} 
                     className={classNames(
-                        "grid grid-cols-1 lg:place-items-center",
-                        "lg:text-center"
+                        "grid grid-cols-1 place-items-center",
+                        "text-center"
                     )}
                 >
 
                     <h1
                         className={classNames(
                             "font-cabinet font-bold",
-                            "text-3xl",
-                            "lg:text-7xl lg:max-w-[100%]"
+                            "text-3xl lg:text-7xl",
                         )}  
                     >{hero.title}
                     </h1>
                     
                     <p
                         className={classNames(
-                            "my-12",
-                            "lg:my-16",
-                            "lg:text-center",
+                            "mt-8 lg:mt-16",
+                            "text-base lg:text-xl lg:text-center",
                         )}  
-                    >Antara lemang yang terbaik di Paya Jaras <br /> Jemput singgah ke gerai kami
+                    >Antara lemang yang terbaik di Paya Jaras
+                    </p>
+
+                    <p
+                        className={classNames(
+                            "mb-8 lg:mb-16",
+                            "text-base lg:text-xl lg:text-center",
+                        )}  
+                    >Jemput singgah ke gerai kami
                     </p>
 
                     <div>
                         <button
                             className={classNames(
                                 "rounded-full py-2 px-12 font-medium",
-                                "bg-clr-light-primary text-clr-dark-primary hover:bg-clr-light-primary/90",
+                                "bg-clr-light-primary text-clr-dark-primary hover:bg-clr-light-primary/95",
+                                // "outline hover:outline-offset-2 outline-2 hover:outline-clr-light-primary"
                             )}  
                         >{hero.info}
                         </button>
@@ -89,7 +99,7 @@ const SHero = ({hero}: iSHero) => {
             {/* START: hero-footnote */}
             <div 
                 className={classNames(
-                    "pb-2 lg:pb-5 pt-12 lg:py-4 relative z-0",
+                    "pt-16 lg:py-4 relative z-0",
                     // "bg-clr-dark-primary/70", nice-blur
                     // "backdrop-blur-lg" nice-blur
                 )}

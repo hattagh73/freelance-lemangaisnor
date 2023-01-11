@@ -22,7 +22,7 @@ const Footer = ({footer}: iFooterObj ) => {
             viewport={{once:true, amount: 0.6}}
             className={classNames(
                 "bg-clr-light-secondary",
-                "pt-16 lg:pt-12 pb-14 lg:pb-4",
+                "pt-16 pb-14 lg:pt-20 lg:pb-5",
             )}
         >
             {/* START: footer-container */}
@@ -50,7 +50,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     <p
                         className={classNames(
                             "text-clr-light-tertiary",
-                            "max-w-[70%] lg:max-w-[35%]"
+                            "max-w-[70%] lg:max-w-[40%]"
                         )}
                     >{footer.co_desc}
                     </p>
@@ -59,10 +59,10 @@ const Footer = ({footer}: iFooterObj ) => {
                 {/* START: footer-col-2 */}
                 <motion.div
                     variants={fadeInDown}
-                    className="lg:col-start-10 lg:justify-self-end"
+                    className="lg:col-start-11 lg:justify-self-start"
                 >
                     <h1
-                        className="font-semibold uppercase"
+                        className="font-semibold"
                     >{footer.pg_links.title}
                     </h1>
 
@@ -88,7 +88,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     )}
                 >
                     <h1
-                        className="font-semibold uppercase"
+                        className="font-semibold"
                     >{footer.service.title}
                     </h1>
 
@@ -106,11 +106,11 @@ const Footer = ({footer}: iFooterObj ) => {
                     </ul>
                 </motion.div>{/* END: footer-col-3 */}
 
-                {/* START: footer-col-7 */}
+                {/* START: footer-col-4 */}
                 <motion.div
                     variants={fadeInDown}
                     className={classNames(
-                        "border-t border-t-[#DDDDDD] pt-2 text-sm text-clr-light-tertiary",
+                        "border-t border-t-[#DDDDDD] pt-4 text-sm text-clr-light-tertiary",
                         "lg:col-span-12",
                         "flex", "flex-col", "lg:flex-row", "lg:justify-between"
                     )}
@@ -123,16 +123,16 @@ const Footer = ({footer}: iFooterObj ) => {
                         {footer.footnote.sos_med.links.map(i =>
                             <li
                                 key={i.id}
-                                className="first:ml-0 ml-3"
+                                className=""
                             >
-                                {i.title}
+                                {i.title}{i.id !== 3 ? <span className="mx-1">·</span> : null}
                             </li>
                         )}
                     </ul>
                     
-                </motion.div>{/* END: footer-col-7 */}
+                </motion.div>{/* END: footer-col-4 */}
 
-                {/* START: footer-col-8 */}
+                {/* START: footer-col-5 */}
                 <motion.p
                     variants={fadeInDown}
                     className={classNames(
@@ -140,9 +140,9 @@ const Footer = ({footer}: iFooterObj ) => {
                         "lg:col-span-12", "lg:justify-self-center"
                     )}
                 >
-                    {footer.made.title} <a href={footer.made.link.url} target="_blank" rel="noreferrer" className="font-medium">{footer.made.link.name}</a>
+                    {footer.made.title} <a href={footer.made.link.url} target="_blank" rel="noreferrer" className="font-medium hover:text-clr-green-primary">{footer.made.link.name}</a>
                 </motion.p>
-                {/* END: footer-col-8 */}
+                {/* END: footer-col-5 */}
                 
             </div>
             {/* END: container */}

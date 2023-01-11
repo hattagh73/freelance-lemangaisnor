@@ -75,7 +75,7 @@
             ]
         },
         "footnote": {
-            "copyright": "© Aisnor Lemang 2022",
+            "copyright": "© Aisnor Lemang 2023",
             "sos_med": {
                 "title": "Sosial Media",
                 "links":[
@@ -127,28 +127,28 @@
     "about": {
         "mini_title": "Tentang",
         "title": "Mengenai Kami",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
         "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg",
         "sells": [
             {
                 "id": 1,
                 "title": "Ketupat",
-                "desc": "Kami menjual ketupat"
+                "desc": "Menjual ketupat"
             },
             {
                 "id": 2,
                 "title": "Lemang",
-                "desc": "Kami menjual lemang"
+                "desc": "Menjual lemang"
             },
             {
                 "id": 3,
                 "title": "Air Tebu",
-                "desc": "Kami menjual air tebu"
+                "desc": "Menjual air tebu"
             },
             {
                 "id": 4,
                 "title": "Tempahan",
-                "desc": "Kami mengambil tempahan"
+                "desc": "Mengambil tempahan"
             }
         ]
     },

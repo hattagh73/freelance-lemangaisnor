@@ -5,8 +5,12 @@ import Image from 'next/image';
 import { iSAbout } from '../../config/data-type';
 
 //* IMPORT: framer-motion
-import { motion } from 'framer-motion';
-import { staggerContainer, fadeInDown, ketupat, light } from '../../config/framer-variants';
+import { animate, motion } from 'framer-motion';
+import { staggerContainer, fadeInDown, fadeInUpwards, fadeLTR, fadeRTL } from '../../config/framer-variants';
+
+//* IMPORT: swiper-react-components-modules-styles
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 // IMPORT: classnames-package
 import classNames from 'classnames';
@@ -14,12 +18,15 @@ import classNames from 'classnames';
 //* START: section-about
 const SAbout = ({about}: iSAbout) => {
     return (
-        <section
+        <motion.section
+            variants={staggerContainer} 
+            initial="initial"
+            whileInView="animate"
+            viewport={{once:true, amount: 0.6}}
             id="s_contact"
             className={classNames(
                 "relative",
-                "pt-32 pb-28"
-                // "pt-32 pb-72",
+                "py-16 lg:pt-24 lg:pb-12"
             )}
         >
             
@@ -31,12 +38,18 @@ const SAbout = ({about}: iSAbout) => {
                 )} 
             >
                 
-                <div 
+                <motion.div 
+                    variants={fadeInDown}
                     className={classNames(
-                        "lg:self-center lg:col-span-5"
+                        "lg:col-span-12"
                     )}
                 >
-                    <h4 className="mini-title">{about.mini_title}</h4>
+
+                    <h4 
+                        className="mini-title"
+                    >{about.mini_title}
+                    </h4>
+
                     <h1
                         className={classNames(
                             "main-title"
@@ -46,84 +59,112 @@ const SAbout = ({about}: iSAbout) => {
 
                     <p
                         className={classNames(
-                            "mt-10 text-clr-light-tertiary max-w-[90%]"
+                            "mt-4 lg:mt-8 text-clr-light-tertiary max-w-[90%]"
                         )}
                     >{about.desc}
                     </p>
 
-                </div>
+                </motion.div>
 
-                <span
+                <motion.span
+                    variants={fadeInDown}
                     className={classNames(
                         "relative overflow-hidden rounded-md",
-                        "w-full h-60",
-                        "lg:col-start-9 lg:col-span-4 lg:justify-self-end lg:w-[70%] lg:h-72",
+                        "w-full h-64",
+                        "lg:col-start-1 lg:col-span-12 lg:justify-self-end lg:w-[100%] lg:h-96",
+                        "mt-4 lg:mt-6"
                     )}
                 >
                     <Image 
                         alt="An Image Of Lemang"      
                         src={about.img}   
                         fill
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                        quality={100}
                         className="object-cover"       
                     />
-                </span>
+                </motion.span>
 
             </div>
 
             {/* START: parent-selling */}           
-            <div className="pt-4 bg-clr-light-primary">
+            <motion.div 
+                variants={fadeInDown}
+                className="pt-7"
+            >
 
                 <div 
                     className={classNames(
-                        "c-container grid overflow-x-auto pt-6 pb-2",
-                        "grid-cols-[188px_188px_188px_188px] gap-x-5",
-                        "lg:grid-cols-4 lg:gap-x-6"
+                        "c-container",
+                        // "bg-clr-green-primary bg-leaf",
+                        // "grid-cols-[188px_188px_188px_188px] gap-x-5",
+                        // "lg:grid-cols-4 lg:gap-x-6"
                     )}
                 >
 
                     {/* START: small-card */}
-                    {about.sells.map(i =>
-                        <div 
-                            key={i.id}
-                            className={classNames(
-                                "border border-clr-dark-primary/10",
-                                "rounded relative",
-                                "text-center",
-                                "pt-8 pb-4"
-                            )}
-                        >
+                    <Swiper
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 5,
+                            },
+                            768:{
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            }
+                        }}
+                        className="w-full"
+                    >
+                        {about.sells.map(i =>
+                            <SwiperSlide
+                                key={i.id}
+                            >
+                                
+                                <div 
+                                    className={classNames(
+                                        "border border-clr-light-tertiary/10 rounded",
+                                        "text-center py-4 hover:shadow shadow-clr-light-tertiary",
+                                    )}
+                                >
 
-                            {/* rounded-label-number */}
-                            <div
-                                className={classNames(
-                                    "absolute -top-[20%] left-[40%]",
-                                    "bg-clr-green-primary text-clr-light-primary rounded-full",
-                                    "w-9 h-9 inline-flex justify-center items-center",
-                                    "outline outline-1 outline-offset-2 outline-clr-dark-primary/10"
-                                )}
-                            >{i.id}
-                            </div>
-                            
-                            <h4
-                                className="font-medium"
-                            >{i.title}
-                            </h4>
+                                    {/* rounded-label-number */}
+                                    <span
+                                        className={classNames(
+                                            // "absolute -top-[20%] left-[40%]",
+                                            "text-clr-green-primary bg-[#F5F5F5] rounded-full",
+                                            "w-8 h-8 inline-flex justify-center items-center",
+                                        )}
+                                    >{i.id}
+                                    </span>
+                                    
+                                    <h4
+                                        className="font-semibold text-clr-dark-primary mt-3"
+                                    >{i.title}
+                                    </h4>
 
-                            <p 
-                                className="text-clr-light-tertiary text-sm mt-2"
-                            >{i.desc}
-                            </p>
-                            
-                            
-
-                        </div>
-                    )}{/* END: small-card */}
+                                    <p 
+                                        className="text-clr-light-tertiary text-sm"
+                                    >{i.desc}
+                                    </p>
+                                    
+                                </div>
+                                
+                            </SwiperSlide>
+                        )}{/* END: small-card */}
+                    </Swiper>
                     
                 </div>
 
-            </div>{/* START: parent-selling */}  
+            </motion.div>{/* START: parent-selling */}  
 
-        </section>
+        </motion.section>
     )
 }
 export default SAbout;

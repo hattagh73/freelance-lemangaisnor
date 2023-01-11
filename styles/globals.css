@@ -65,7 +65,7 @@
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url('/fonts/Poppins-Bold.ttf');
+        src: url('/fonts/Inter-Bold.ttf');
     }
 
     html {
@@ -73,7 +73,7 @@
     }
     
     .c-container {
-        @apply max-w-[1296px] mx-4 lg:mx-auto;
+        @apply max-w-[1080px] mx-4 lg:mx-auto;
     }
 
     .c-container-header {
@@ -85,7 +85,7 @@
     }
 
     .main-title {
-        @apply text-6xl font-extrabold font-cabinet;
+        @apply text-3xl lg:text-5xl font-extrabold font-cabinet;
     }
     
 }
