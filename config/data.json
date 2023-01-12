@@ -104,10 +104,10 @@
         }
     },
     "hero": {
-        "title": "Aisnor Lemang Paya Jaras",
-        "desc": "Jemput singgah ke gerai kami. Antara lemang yang terbaik di Paya Jaras",
+        "title": "Lemang Panas Paya Jaras",
+        "desc1": "Antara lemang yang terbaik di sekitar Sungai Buloh dan Paya Jaras",
+        "desc2": "Jemput singgah ke gerai kami",
         "info": "Info",
-        "ais_lmg": "Aisnor Lemang",
         "socials": [
             {
                 "id": 1,
