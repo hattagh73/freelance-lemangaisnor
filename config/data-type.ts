@@ -76,7 +76,8 @@ export interface iSHero {
 
 export interface iHero {
     title: string;
-    desc: string;
+    desc1: string;
+    desc2: string;
     info: string;
     ais_lmg: string;
     socials: {
