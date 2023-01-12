@@ -70,7 +70,7 @@ const SHero = ({hero}: iSHero) => {
                             "mt-8 lg:mt-16",
                             "text-base lg:text-xl lg:text-center",
                         )}  
-                    >Antara lemang yang terbaik di Paya Jaras
+                    >{hero.desc1}
                     </p>
 
                     <p
@@ -78,7 +78,7 @@ const SHero = ({hero}: iSHero) => {
                             "mb-8 lg:mb-16",
                             "text-base lg:text-xl lg:text-center",
                         )}  
-                    >Jemput singgah ke gerai kami
+                    >{hero.desc2}
                     </p>
 
                     <div>
@@ -115,10 +115,11 @@ const SHero = ({hero}: iSHero) => {
                         "gap-y-2 gap-x-2"
                     )}
                 >
-                    <p className="order-1">{hero.ais_lmg}</p>
+
+                    <p className="order-1">{hero.since}</p>
 
                     <ul className={classNames(
-                        "order-3 basis-full lg:basis-auto lg:order-2 justify-center flex"
+                        "order-2 basis-full lg:basis-auto justify-center flex"
                     )}>
                         {hero.socials.map(i =>
                             <li
@@ -129,8 +130,7 @@ const SHero = ({hero}: iSHero) => {
                             </li>
                         )}
                     </ul>
-
-                    <p className="order-2">{hero.since}</p>
+                    
                 </motion.div>
 
             </div>{/* END: hero-footnote */}
