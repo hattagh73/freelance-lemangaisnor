@@ -31,10 +31,11 @@ const Header = () => {
             className={classNames(
                 "fixed bottom-0 w-full z-50",
                 "lg:top-0 lg:bottom-auto",
-                "py-2 lg:py-2",
+                "py-2 bg-clr-dark-primary",
                 {"lg:bg-clr-light-primary":header},
+                {"lg:bg-transparent":!header},
                 "text-clr-light-primary",
-                {"text-clr-dark-primary":header},
+                {"lg:text-clr-dark-primary":header},
                 {"lg:shadow lg:shadow-clr-dark-primary/10":header}
             )}
         >
@@ -57,7 +58,7 @@ const Header = () => {
                     )}
                 >
 
-                    <li>Utama</li>
+                    {/* <li>Utama</li> */}
                     <li>Tentang</li>
                     <li>Produk</li>
                     <li
@@ -72,6 +73,7 @@ const Header = () => {
                             /> */}
                         </Link> 
                     </li>
+                    <li>Lokasi</li>
 
                 </ul>{/* END: nav-anchor-links */}
 
