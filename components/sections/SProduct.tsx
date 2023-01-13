@@ -14,11 +14,15 @@ import classNames from 'classnames';
 //* START: section-product
 const SProduct = ({product}: iSProduct) => {
     return (
-        <section
+        <motion.section
+            variants={staggerContainer}
+            initial="initial"
+            whileInView={"animate"}
+            viewport={{once:true, amount: 0.6}}
             id="s_contact"
             className={classNames(
-                "pt-32 pb-72",
-                "bg-clr-light-secondary"
+                "py-12",
+                // "bg-clr-light-secondary"
             )}
         >
             
@@ -33,7 +37,8 @@ const SProduct = ({product}: iSProduct) => {
             >
 
                 {/* START: product-col-1 */}
-                <div
+                <motion.div
+                    variants={fadeInDown}
                     className={classNames(
                         "order-1 lg:order-2",
                         "flex flex-col",
@@ -59,10 +64,11 @@ const SProduct = ({product}: iSProduct) => {
                     >{product.desc}
                     </p>
 
-                </div>{/* END: product-col-1 */}
+                </motion.div>{/* END: product-col-1 */}
                 
                 {/* START: product-col-2 */}
-                <div
+                <motion.div
+                    variants={fadeInDown}
                     className={classNames(
                         "order-2 lg:order-1",
                         "grid grid-cols-2 grid-rows-[200px_200px]",
@@ -85,15 +91,18 @@ const SProduct = ({product}: iSProduct) => {
                                 alt="Gambar Produk"
                                 src={i.src}
                                 fill
+                                sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,
+                                33vw"
                                 className="object-cover z-[1]"
                             />
                         </div>
                     )}
-                </div>{/* END: product-col-2 */}
+                </motion.div>{/* END: product-col-2 */}
 
             </div>{/* END: product-container */}
 
-        </section>
+        </motion.section>
     )
 }
 export default SProduct;
