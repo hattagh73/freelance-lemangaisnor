@@ -9,11 +9,11 @@ import Head from 'next/head';
 import { iDataProps } from '../config/data-type';
 
 //* IMPORT: components
-import { SHero, SProduct, STestimony, SAbout } from '../components/components';
+import { SHero, SProduct, STestimony, SAbout, SLocation } from '../components/components';
 
 //* START: home-page
 const Home:NextPage = () => {
-    const { head, hero, about, product, testimony }:iDataProps = data;
+    const { head, hero, about, product, testimony, location }:iDataProps = data;
     return (
         <>
             <Head>
@@ -23,6 +23,7 @@ const Home:NextPage = () => {
             <SAbout about={about} />
             <SProduct product={product} />
             <STestimony testimony={testimony} />
+            <SLocation location={location} />
         </>
     )
 }
