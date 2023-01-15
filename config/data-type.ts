@@ -5,6 +5,7 @@ export interface iDataProps {
     hero: iHero;
     about: iAbout;
     product: iProduct;
+    location: iLocation;
     testimony: iTestimony;
 }
 
@@ -33,21 +34,6 @@ export interface iFooter {
         services: {
             id: number;
             name: string;
-        }[]
-    }
-    lokasi: {
-        title: string;
-        full_address: {
-            id: number;
-            address: string;
-        }[]
-    }
-    schedules: {
-        title: string;
-        schedule: {
-            id: number;
-            day: string;
-            time: string;
         }[]
     }
     footnote: {
@@ -79,7 +65,7 @@ export interface iHero {
     desc1: string;
     desc2: string;
     info: string;
-    ais_lmg: string;
+    ais_lmg?: string;
     socials: {
         id: number;
         name: string;
@@ -117,6 +103,31 @@ export interface iProduct {
         id: number;
         src: string;
     }[]
+}
+
+//* TYPE: component-section-location
+export interface iSLocation {
+    location: iLocation
+}
+
+export interface iLocation {
+    mini_title: string;
+    title: string;
+    // lokasi: {
+    //     title: string;
+    //     full_address: {
+    //         id: number;
+    //         address: string;
+    //     }[]
+    // }
+    // schedules: {
+    //     title: string;
+    //     schedule: {
+    //         id: number;
+    //         day: string;
+    //         time: string;
+    //     }[]
+    // }
 }
 
 //* TYPE: component-section-testimony
