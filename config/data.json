@@ -127,7 +127,7 @@
     "about": {
         "mini_title": "Tentang",
         "title": "Mengenai Kami",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg",
         "sells": [
             {
@@ -207,5 +207,9 @@
             }
             
         ]
+    },
+    "location": {
+        "mini_title": "Lokasi",
+        "title": "Lokasi Gerai Kami"
     }
 }
