@@ -1,17 +1,18 @@
 //* IMPORT: types
 import { iSLocation } from '../../config/data-type';
 
+//* IMPORT: nextjs-features
 import Image from 'next/image';
 
 //* IMPORT: framer-motion
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeInDown, fadeInUpwards } from '../../config/framer-variants';
 
+//* IMPORT: components
+import { Badge } from '../components';
+
 //* IMPORT: classnames
 import classNames from 'classnames';
-
-//* IMPORT: icon
-// import loc_img from '/images/icon-place.svg';
 
 const SLocation = ({location}: iSLocation) => {
 
@@ -44,21 +45,11 @@ const SLocation = ({location}: iSLocation) => {
                     >{location.title}
                     </h1>
                     
-                    <div className="inline-flex gap-x-1 mini-title">
-                        
-                        <Image 
-                            alt="SVG Icon Location"
-                            src={"/images/icon-place.svg"}
-                            width={16}
-                            height={16}
-                        />
-
-                        <span 
-                            // className="mini-title"
-                        >{location.mini_title}
-                        </span>
-
-                    </div>
+                    <Badge
+                        alt="SVG icon image location"
+                        src={location.badge_img}
+                        mini_title={location.mini_title}
+                    />
                     
                 </div>
 
