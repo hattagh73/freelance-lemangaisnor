@@ -80,6 +80,7 @@ export interface iSAbout {
 
 export interface iAbout {
     mini_title: string;
+    badge_img: string;
     title: string;
     desc: string;
     img: string;
@@ -97,6 +98,7 @@ export interface iSProduct {
 
 export interface iProduct {
     mini_title: string;
+    badge_img: string;
     title: string;
     desc: string;
     img: {
@@ -112,6 +114,7 @@ export interface iSLocation {
 
 export interface iLocation {
     mini_title: string;
+    badge_img: string;
     title: string;
     // lokasi: {
     //     title: string;
@@ -137,6 +140,7 @@ export interface iSTestimony {
 
 export interface iTestimony {
     mini_title: string;
+    badge_img: string;
     title: string;
     testimonials: {
         id: number;
@@ -154,4 +158,10 @@ export interface iBlob {
 export interface iLogo {
     logo_wrap?: string;
     logo_img?: string;
+}
+
+export interface iBadge {
+    alt: string;
+    src: string;
+    mini_title?: string;
 }

@@ -85,11 +85,11 @@
     }
 
     .mini-title {
-        @apply text-xs font-medium text-clr-green-primary bg-clr-light-secondary inline py-3 px-8 border-l-[3px] border-l-clr-green-primary;
+        @apply text-xs font-medium text-clr-green-primary bg-clr-light-secondary inline py-2 px-3 border-r-[3px] border-r-clr-green-primary;
     }
 
     .main-title {
-        @apply mt-4 text-3xl lg:text-4xl font-bold font-cabinet;
+        @apply text-3xl lg:text-4xl font-bold font-cabinet tracking-wide;
     }
     
 }

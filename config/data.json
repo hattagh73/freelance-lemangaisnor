@@ -96,7 +96,7 @@
             }
         },
         "made": {
-            "title": "Kraftangan",
+            "title": "- Kraftangan",
             "link": {
                 "name": "hattaltd",
                 "url": "http://hatta.vercel.app/"
@@ -126,6 +126,7 @@
     },
     "about": {
         "mini_title": "Tentang",
+        "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673887102/aisnor/isxa29xg65hiqs4momjj.svg",
         "title": "Mengenai Kami",
         "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1671366643/aisnor/ilxqw467qsydtdl9osh5.jpg",
@@ -154,6 +155,7 @@
     },
     "product": {
         "mini_title": "Produk",
+        "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673886317/aisnor/n17ecgcwbwzvyltf4nbd.svg",
         "title": "Produk Kami",
         "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni, sequi reprehenderit nulla, possimus enim corporis in eos ex amet odit! Suscipit.",
         "img": [
@@ -173,6 +175,7 @@
     },
     "testimony": {
         "mini_title": "Testimoni",
+        "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673886317/aisnor/rno4wvnmta8og3j332zx.svg",
         "title": "Testimoni Pelanggan Kami",
         "testimonials": [
             {
@@ -210,6 +213,7 @@
     },
     "location": {
         "mini_title": "Lokasi",
+        "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673886317/aisnor/imxlb6wnifjtpepkeymc.svg",
         "title": "Lokasi Gerai Kami"
     }
 }
