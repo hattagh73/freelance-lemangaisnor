@@ -20,7 +20,7 @@ export const staggerHeroContainer = {
 
 export const fadeInDown = {
     initial: {
-        y: -25,
+        y: -20,
         opacity: 0
     },
     animate: {
