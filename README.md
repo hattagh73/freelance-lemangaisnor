@@ -97,8 +97,8 @@ Some screenshots design of the project using Figma.
 Following below are the full designs of the project
 
 <p align="middle">
-  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
-  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+  <img width="70%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+  <img width="70%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/213228822-b698d7ca-1ba0-46cf-b1a1-74e00773814d.jpg">
 </p>
 
 ### Hero Section Design
