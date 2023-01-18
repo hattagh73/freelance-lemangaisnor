@@ -94,16 +94,26 @@ A list of **technology stack** that we applied in this project. There are as lis
 Some screenshots design of the project using Figma.
 
 ### Full Design
-Following below is the full design of the project
-<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+Following below are the full designs of the project
+
+<p align="middle">
+  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/211504459-5a07ea55-3ffa-4c30-a54c-9c40a55ed785.jpg">
+</p>
 
 ### Hero Section Design
 Following below is the various design of hero section
-<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910563-e6b86b1a-6d88-471a-ad4a-e633825f65ac.jpg">
+
+<p align="middle">
+  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910563-e6b86b1a-6d88-471a-ad4a-e633825f65ac.jpg">
+</p>
 
 ### Footer Design
-Following below is the various design of footer
-<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910800-676d15af-06a3-4b82-83a6-44a9cc61dedb.jpg">
+Following below is the various design of footer section
+
+<p align="middle">
+  <img width="40%" alt="Image results" src="https://user-images.githubusercontent.com/92319348/208910800-676d15af-06a3-4b82-83a6-44a9cc61dedb.jpg">
+</p>
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
