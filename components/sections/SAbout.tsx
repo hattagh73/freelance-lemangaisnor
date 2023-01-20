@@ -57,24 +57,9 @@ const SAbout = ({about}: iSAbout) => {
             <motion.div
                 variants={fadeInDown}
                 className={classNames(
-                    "mt-10 grid grid-cols-12 gap-x-10"
+                    "mt-10"
                 )}
             >
-                <div className="col-span-6 order-2 flex flex-col ">
-                    <p
-                        className={classNames(
-                            "lg:text-clr-light-tertiary"
-                        )}
-                    >{about.desc}
-                    </p>
-
-                    <p
-                        className={classNames(
-                            "lg:text-clr-light-tertiary "
-                        )}
-                    >Lorem ipsum
-                    </p>
-                </div>
 
                 <Image 
                     alt="An Image Of Lemang"      
@@ -82,7 +67,7 @@ const SAbout = ({about}: iSAbout) => {
                     width={1920}
                     height={1080}
                     quality={100}
-                    className="object-cover col-span-6 h-80 w-full rounded order-1"       
+                    className="object-cover col-span-full h-80 w-full rounded"       
                 />
 
             </motion.div>
