@@ -116,7 +116,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
 
                             {/* user-testimony */}
                             <div
-                                className="bg-clr-light-secondary text-center mt-4 py-12 px-48 rounded"
+                                className="bg-clr-light-secondary text-center mt-4 py-12 md:px-48 rounded"
                             >
                                 <p
                                     className={classNames(
