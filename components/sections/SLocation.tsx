@@ -59,7 +59,9 @@ const SLocation = ({location}: iSLocation) => {
 
             <motion.div
                 variants={fadeInDown}
-                className="mt-20 grid grid-cols-12 grid-rows-2 gap-5"
+                className={classNames(
+                    "mt-20 grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-5"
+                )}
             >
 
                 <iframe 
@@ -67,13 +69,13 @@ const SLocation = ({location}: iSLocation) => {
                     allowFullScreen={true}
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full h-full row-span-full col-span-8 border border-clr-dark-primary/5 rounded-md outline-none"
+                    className="w-full h-full lg:row-span-full lg:col-span-8 border border-clr-dark-primary/5 rounded-md outline-none"
                 />
 
                 
 
                 <div className={classNames(
-                    "col-start-9 col-span-full",
+                    "lg:col-start-9 lg:col-span-full",
                     "bg-clr-light-secondary px-6 py-6 rounded-md"
                 )}>
 
@@ -91,7 +93,7 @@ const SLocation = ({location}: iSLocation) => {
                 </div>
 
                 <div className={classNames(
-                    "col-start-9 col-span-full",
+                    "lg:col-start-9 lg:col-span-full",
                     "bg-clr-light-secondary px-6 py-6 rounded-md"
                 )}>
 
@@ -112,8 +114,6 @@ const SLocation = ({location}: iSLocation) => {
                     </ul>
 
                 </div>
-
-                
 
             </motion.div>
             
