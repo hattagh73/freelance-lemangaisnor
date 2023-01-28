@@ -16,7 +16,6 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeInDown, fadeInUpwards } from '../../config/framer-variants';
 
 //* IMPORT: components
-import { Badge } from '../components';
 
 //* IMPORT: classnames
 import classNames from 'classnames';
@@ -48,22 +47,12 @@ const STestimony = ({testimony}: iSTestimony ) => {
                 )}
             >
 
-                <div className="flex justify-between items-center">
-
-                    <h1
-                        className={classNames(
-                            "main-title"
-                        )}
-                    >{testimony.title}
-                    </h1>
-
-                    <Badge 
-                        alt="SVG icon image testimony"
-                        src={testimony.badge_img}
-                        mini_title={testimony.mini_title}
-                    />
-                    
-                </div>
+                <h1
+                    className={classNames(
+                        "main-title"
+                    )}
+                >{testimony.title}
+                </h1>
 
                 <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 

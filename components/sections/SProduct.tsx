@@ -17,7 +17,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 //* IMPORT: components
-import { Badge } from '../components';
 
 //* IMPORT: classnames-package
 import classNames from 'classnames';
@@ -58,22 +57,13 @@ const SProduct = ({product}: iSProduct) => {
                         "col-span-full"
                     )}
                 >
-                    <div className="flex justify-between items-center">
-
-                        <h1
-                            className={classNames(
-                                "main-title"
-                            )}
-                        >{product.title}
-                        </h1>
-                        
-                        <Badge
-                            alt="SVG icon image product"
-                            src={product.badge_img}
-                            mini_title={product.mini_title}
-                        />
-
-                    </div>
+                    
+                    <h1
+                        className={classNames(
+                            "main-title"
+                        )}
+                    >{product.title}
+                    </h1>
                     
                     <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 

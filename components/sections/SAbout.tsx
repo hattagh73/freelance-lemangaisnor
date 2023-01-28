@@ -9,7 +9,6 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeInDown, fadeInUpwards, fadeLTR, fadeRTL } from '../../config/framer-variants';
 
 //* IMPORT: components
-import { Badge } from '../components';
 
 // IMPORT: classnames-package
 import classNames from 'classnames';
@@ -33,22 +32,12 @@ const SAbout = ({about}: iSAbout) => {
                 variants={fadeInDown}
             >
                 
-                <div className="flex justify-between items-center">
-
-                    <h1
-                        className={classNames(
-                            "main-title"
-                        )}
-                    >{about.title}
-                    </h1>
-
-                    <Badge
-                        alt="SVG icon image about"
-                        src={about.badge_img}
-                        mini_title={about.mini_title}
-                    />
-
-                </div>
+                <h1
+                    className={classNames(
+                        "main-title"
+                    )}
+                >{about.title}
+                </h1>
 
                 <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
