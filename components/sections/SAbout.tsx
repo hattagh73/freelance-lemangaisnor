@@ -25,11 +25,16 @@ const SAbout = ({about}: iSAbout) => {
             viewport={{once:true, amount: 0.6}}
             id="s_contact"
             className={classNames(
-                "py-16 lg:pt-24 lg:pb-12 c-container"
+                "py-16 lg:pt-24 lg:pb-12 c-container",
+                "grid grid-cols-1 gap-y-5",
+                "md:grid-cols-2 md:gap-x-5"
             )}
         >
+
+            {/* START: col-title */}
             <motion.div
                 variants={fadeInDown}
+                className=""
             >
                 
                 <h1
@@ -39,14 +44,18 @@ const SAbout = ({about}: iSAbout) => {
                 >{about.title}
                 </h1>
 
-                <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p className="text-clr-light-tertiary mt-4 md:w-[85%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
 
-            </motion.div>
-
+            </motion.div>{/* END: col-title */}
+            
+            {/* START: col-image */}
             <motion.div
                 variants={fadeInDown}
                 className={classNames(
-                    "mt-10"
+                    ""
                 )}
             >
 
@@ -55,11 +64,10 @@ const SAbout = ({about}: iSAbout) => {
                     src={about.img}   
                     width={1920}
                     height={1080}
-                    quality={100}
-                    className="object-cover col-span-full h-80 w-full rounded"       
+                    className="object-cover h-[440px] w-full"       
                 />
 
-            </motion.div>
+            </motion.div>{/* END: col-image */}
 
         </motion.section>
     )
