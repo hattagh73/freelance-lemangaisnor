@@ -20,7 +20,7 @@ export const staggerHeroContainer = {
 
 export const fadeInDown = {
     initial: {
-        y: -20,
+        y: -15,
         opacity: 0
     },
     animate: {
@@ -29,6 +29,7 @@ export const fadeInDown = {
         // transition: { type: 'spring', velocity: 2 }
         transition: { 
             type: 'tween', 
+            ease: 'linear',
             duration: 0.65
         },
         // transition: { ease: 'easeInOut', duration: 0.65 } 
