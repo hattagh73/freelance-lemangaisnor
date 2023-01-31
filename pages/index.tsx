@@ -9,7 +9,7 @@ import Head from 'next/head';
 import { iDataProps } from '../config/data-type';
 
 //* IMPORT: components
-import { SHero, SProduct, STestimony, SAbout, SLocation } from '../components/components';
+import { SHero, SProduct, STestimony, SAbout, SLocation, SPromo } from '../components/components';
 
 //* START: home-page
 const Home:NextPage = () => {
@@ -24,6 +24,7 @@ const Home:NextPage = () => {
             <SProduct product={product} />
             <STestimony testimony={testimony} />
             <SLocation location={location} />
+            <SPromo />
         </>
     )
 }

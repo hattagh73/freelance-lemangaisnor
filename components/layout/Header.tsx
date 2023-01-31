@@ -31,7 +31,7 @@ const Header = () => {
             className={classNames(
                 "fixed bottom-0 w-full z-50",
                 "lg:top-0 lg:bottom-auto",
-                "py-2 bg-clr-dark-primary",
+                "py-3 bg-clr-dark-primary",
                 {"lg:bg-clr-light-primary":header},
                 {"lg:bg-transparent":!header},
                 "text-clr-light-primary",
@@ -42,27 +42,30 @@ const Header = () => {
 
             <nav
                 className={classNames(
-                    "c-container-header",
+                    "c-container",
                     "lg:flex justify-between lg:items-center",
+                    // "lg:flex justify-center",
                 )}
             >
                 {/* START: nav-logo */}
-                <Logo 
+                {/* <Logo 
                     logo_wrap="hidden lg:inline-flex h-11 w-20"
-                />{/* END: nav-logo */}
+                /> */}
+                <h1 className="font-heyaug text-4xl">Lemang Panas</h1>
+                
 
                 {/* START: nav-anchor-links */}
                 <ul
                     className={classNames(
-                        "flex justify-between lg:gap-x-9 font-medium",
+                        "flex justify-between lg:gap-x-10 font-medium",
                     )}
                 >
 
                     {/* <li>Utama</li> */}
-                    <li>Tentang</li>
-                    <li>Produk</li>
+                    <li className="self-center">Tentang</li>
+                    <li className="self-center">Produk</li>
                     <li
-                        className="relative"
+                        className="relative self-center"
                     >
                         <Link
                             className="s_contact" to="s_contact" spy={true} smooth={true} duration={500}
@@ -73,7 +76,7 @@ const Header = () => {
                             /> */}
                         </Link> 
                     </li>
-                    <li>Lokasi</li>
+                    <li className="self-center">Lokasi</li>
 
                 </ul>{/* END: nav-anchor-links */}
 

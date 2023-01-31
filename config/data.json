@@ -104,8 +104,9 @@
         }
     },
     "hero": {
-        "title": "Lemang Panas Paya Jaras",
-        "desc1": "Antara lemang yang terbaik di sekitar Sungai Buloh dan Paya Jaras",
+        "title1": "Lemang Panas",
+        "title2": "Paya Jaras",
+        "desc1": "Antara lemang yang terbaik di Sungai Buloh dan Paya Jaras",
         "desc2": "Jemput singgah ke gerai kami",
         "info": "Info",
         "socials": [
@@ -176,7 +177,7 @@
     "testimony": {
         "mini_title": "Testimoni",
         "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673886317/aisnor/rno4wvnmta8og3j332zx.svg",
-        "title": "Testimoni Pelanggan Kami",
+        "title": "Testimoni Pelanggan",
         "testimonials": [
             {
                 "id": 1,
@@ -214,6 +215,6 @@
     "location": {
         "mini_title": "Lokasi",
         "badge_img": "https://res.cloudinary.com/dltslq5fh/image/upload/v1673886317/aisnor/imxlb6wnifjtpepkeymc.svg",
-        "title": "Lokasi Gerai Kami"
+        "title": "Lokasi Gerai"
     }
 }
