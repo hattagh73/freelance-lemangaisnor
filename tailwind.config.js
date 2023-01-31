@@ -10,16 +10,19 @@ tailwindConfig = {
         extend: {
             colors: {
                 "clr-light-primary": "#FAFAFA",
-                "clr-light-secondary": "#F4F4F4",
-                "clr-light-tertiary": "#848683",
-                "clr-green-primary": "#08C05A",
+                "clr-light-secondary": "#F6F6F6",
+                "clr-light-tertiary": "#787878",
+                // "clr-light-tertiary": "#787C76",
+                "clr-green-primary": "#8A9A5B",
                 "clr-green-seondary": "#21B45E",
                 "clr-green-tertiary": "#1EA657",
-                "clr-dark-primary": "#0e120c",
+                // "clr-dark-primary": "#0e120c",
+                "clr-dark-primary": "#323232",
             },
             fontFamily: {
-                inter: ["Inter", "sans-serif"],
-                cabinet: ["Cabinet", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"],
+                mochiy: ["Mochiy", "sans-serif"],
+                heyaug: ["HeyAug", "sans-serif"],
             },
             fontSize: {
                 "10xl": ["10rem", { lineHeight: "1" }],
@@ -29,11 +32,12 @@ tailwindConfig = {
             },
             // backgroundImage: {
             //     hero: "url('/images/pattern-africa.svg')",
-            // },
-        },
+            //     leaf: "url('/images/bg-leaf.svg')",
+            // }
+        }
     },
     plugins: [
-        require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/aspect-ratio')
     ],
 }
 
