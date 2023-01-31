@@ -61,7 +61,8 @@ export interface iSHero {
 }
 
 export interface iHero {
-    title: string;
+    title1: string;
+    title2: string;
     desc1: string;
     desc2: string;
     info: string;
