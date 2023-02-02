@@ -25,16 +25,16 @@ const SAbout = ({about}: iSAbout) => {
             viewport={{once:true, amount: 0.6}}
             id="s_contact"
             className={classNames(
-                "py-16 lg:pt-24 lg:pb-12 c-container",
+                "py-16 lg:pt-20 lg:pb-12 c-container",
                 "grid grid-cols-1 gap-y-5",
-                "md:grid-cols-2 md:gap-x-5"
+                "md:grid-cols-[35%_1fr] md:gap-x-5"
             )}
         >
 
             {/* START: col-title */}
             <motion.div
                 variants={fadeInDown}
-                className=""
+                className="self-center flex flex-col gap-y-10"
             >
                 
                 <h1
@@ -44,9 +44,13 @@ const SAbout = ({about}: iSAbout) => {
                 >{about.title}
                 </h1>
 
-                <p className="text-clr-light-tertiary mt-4 md:w-[85%]">
+                <p className="text-clr-light-tertiary md:w-[85%] leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+
+                <p
+                    className="text-clr-light-tertiary md:w-[85%] tracking-wide"
+                >Lorem ipsum dolor
                 </p>
 
             </motion.div>{/* END: col-title */}
@@ -64,7 +68,7 @@ const SAbout = ({about}: iSAbout) => {
                     src={about.img}   
                     width={1920}
                     height={1080}
-                    className="object-cover h-[440px] w-full"       
+                    className="object-cover h-[520px] w-full"       
                 />
 
             </motion.div>{/* END: col-image */}
