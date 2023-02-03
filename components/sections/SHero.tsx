@@ -41,7 +41,7 @@ const SHero = ({hero}: iSHero) => {
             </div>
 
             {/* layer-2-overlays */}
-            <div className="absolute inset-0 z-[2] bg-black/80 backdrop-blur-sm" />
+            <div className="absolute inset-0 z-[2] bg-black/90 backdrop-blur-sm" />
 
             {/* layer-3-hero-content */}
             <div
@@ -54,32 +54,23 @@ const SHero = ({hero}: iSHero) => {
                 {/* START: hero-titles */}
                 <motion.div 
                     variants={fadeInDown} 
-                    className="pt-48 flex flex-col gap-y-10 text-center"
+                    className="pt-56 md:pt-40 flex flex-col items-center gap-y-10 text-center"
                 >
 
-                    <div
-                        className="font-mochiy text-[5.25rem]"
-                    >
-
-                        <h1
-                            className={classNames(
-                                "text-clr-green-primary leading-tight"
-                            )}
-                        >{hero.title1}<br /><span className="text-clr-light-primary">{hero.title2}</span>
-                        </h1>
-
-                        {/* <h1
-                            className={classNames(
-                                "text-clr-light-primary "
-                            )}
-                        >{hero.title2}
-                        </h1> */}
-
-                    </div>
+                    <h1
+                        className={classNames(
+                            "font-heyaug text-clr-green-primary -rotate-3 tracking-wide",
+                            "text-6xl",
+                            "lg:text-9xl",
+                            // "[5.25rem]"
+                        )}
+                    >{hero.title1}<br/><span className="text-clr-light-primary"> {hero.title2}</span>
+                    </h1>
 
                     <p
                         className={classNames(
-                            ""
+                            "text-sm lg:text-base",
+                            "max-w-[90%]"
                         )}
                     >{hero.desc1}
                     </p>
@@ -107,48 +98,91 @@ const SHero = ({hero}: iSHero) => {
                 >
 
                     <motion.ul 
-                        className="flex items-center gap-x-4"
+                        className="flex items-center gap-x-5"
                     >
                         
-                        <li
-                            className=""
-                        >
-                            <Image 
-                                alt="Hero social icon"
-                                src="/images/fa-whatsapp.svg"
-                                height={22}
-                                width={22}
-                                className=""
-                            />
-                        </li>
-                        
-                        <li
-                            className=""
-                        >
-                            <Image 
-                                alt="Hero social icon"
-                                src="/images/fa-instagram.svg"
-                                height={22}
-                                width={22}
-                                className=""
-                            />
-                        </li>
+                        <motion.li
+                            initial = {{
+                                rotate: 0,
+                                scale: 1
+                            }}
 
-                        <li
+                            whileHover = {{
+                                rotate: 360,
+                                scale: 1.4
+                            }}
+                            transition = {{
+                                delay: 0.1,
+                                duration: 0.3,
+                                ease: "easeIn"
+                            }}
                             className=""
                         >
                             <Image 
                                 alt="Hero social icon"
-                                src="/images/fa-facebook.svg"
-                                height={24}
-                                width={24}
-                                className=""
+                                // src="/images/fa-whatsapp.svg"
+                                src="/images/sc-ig-2.png"
+                                height={512}
+                                width={512}
+                                className="w-6 h-6"
                             />
-                        </li>
+                        </motion.li>
+
+                        <motion.li
+                            initial = {{
+                                rotate: 0,
+                                scale: 1
+                            }}
+
+                            whileHover = {{
+                                rotate: 360,
+                                scale: 1.4
+                            }}
+                            transition = {{
+                                delay: 0.1,
+                                duration: 0.3,
+                                ease: "easeIn"
+                            }}
+                            className=""
+                        >
+                            <Image 
+                                alt="Hero social icon"
+                                src="/images/sc-wa-2.png"
+                                height={512}
+                                width={512}
+                                className="w-6 h-6"
+                            />
+                        </motion.li>
+                        
+                        <motion.li
+                            initial = {{
+                                rotate: 0,
+                                scale: 1
+                            }}
+
+                            whileHover = {{
+                                rotate: 360,
+                                scale: 1.4
+                            }}
+                            transition = {{
+                                delay: 0.1,
+                                duration: 0.3,
+                                ease: "easeIn"
+                            }}
+                            className=""
+                        >
+                            <Image 
+                                alt="Hero social icon"
+                                src="/images/sc-fb-2.png"
+                                height={512}
+                                width={512}
+                                className="w-6 h-6"
+                            />
+                        </motion.li>
 
                     </motion.ul>
 
-                    <p className="mt-1 text-sm font-medium">Lemang Panas</p>
+                    <p className="mt-3 text-sm">Lemang Panas</p>
 
                 </motion.div>
 
