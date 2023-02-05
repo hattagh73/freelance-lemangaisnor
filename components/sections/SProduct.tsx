@@ -54,7 +54,7 @@ const SProduct = ({product}: iSProduct) => {
                 <motion.div
                     variants={fadeInDown}
                     className={classNames(
-                        "col-span-full"
+                        "col-span-full place-self-center text-center"
                     )}
                 >
                     
@@ -65,13 +65,13 @@ const SProduct = ({product}: iSProduct) => {
                     >{product.title}
                     </h1>
                     
-                    <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p className="text-clr-light-tertiary mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
                 </motion.div>{/* END: product-col-1 */}
 
                 <motion.div 
                     variants={fadeInDown}
-                    className="mt-16 col-span-full"
+                    className="mt-14 col-span-full px-36"
                 >
                     <Swiper
                             // slidesPerView={"auto"}
@@ -93,7 +93,7 @@ const SProduct = ({product}: iSProduct) => {
                                 },
                                 1024: {
                                     slidesPerView: 3,
-                                    spaceBetween: 70,
+                                    spaceBetween: 20,
                                 }
                             }}
                             className="pb-10"
