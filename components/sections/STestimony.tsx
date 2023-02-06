@@ -43,7 +43,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
             <motion.div
                 variants={fadeInDown}
                 className={classNames(
-                    "col-span-full",
+                    "col-span-full flex flex-col items-center text-center gap-y-3",
                 )}
             >
 
@@ -54,7 +54,10 @@ const STestimony = ({testimony}: iSTestimony ) => {
                 >{testimony.title}
                 </h1>
 
-                <p className="text-clr-light-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p 
+                    className="text-clr-light-tertiary"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
 
             </motion.div>{/* END: testimony-col-1 */}
 
@@ -62,7 +65,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
             <motion.div
                 variants={fadeInDown}
                 className={classNames(
-                    "col-span-full",
+                    "col-span-full px-36",
                 )}
             >
                 <Swiper
@@ -72,7 +75,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
                         bulletActiveClass: `${bulletActiveClass}`,
                     }}
                     modules={[Pagination, Navigation]}
-                    className="mt-28 w-full pb-8"
+                    className="mt-16 w-full pb-8"
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
@@ -105,7 +108,7 @@ const STestimony = ({testimony}: iSTestimony ) => {
 
                             {/* user-testimony */}
                             <div
-                                className="bg-clr-light-secondary text-center mt-4 py-12 md:px-48 rounded"
+                                className="bg-clr-light-secondary text-center mt-4 py-12 md:px-60 rounded"
                             >
                                 <p
                                     className={classNames(
