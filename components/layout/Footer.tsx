@@ -1,6 +1,9 @@
 //* IMPORT: types
 import { iFooterObj } from '../../config/data-type';
 
+//* IMPORT: nextjs-features
+import Image from 'next/image';
+
 //* IMPORT: components
 import { Logo } from '../components';
 
@@ -22,7 +25,7 @@ const Footer = ({footer}: iFooterObj ) => {
             viewport={{once:true, amount: 0.6}}
             className={classNames(
                 "bg-clr-light-secondary",
-                "pt-16 pb-14 lg:pt-20 lg:pb-5",
+                "pt-16 pb-14 lg:pt-10 lg:pb-10",
             )}
         >
             {/* START: footer-container */}
@@ -32,7 +35,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     "c-container grid ",
                     "grid-cols-1", "lg:grid-cols-12", 
                     "lg:gap-x-0", 
-                    "gap-10", "lg:gap-y-20"
+                    "gap-10", "lg:gap-y-32"
                 )}
             >
                 {/* START: footer-col-1 */}
@@ -50,7 +53,7 @@ const Footer = ({footer}: iFooterObj ) => {
                     <p
                         className={classNames(
                             "text-clr-light-tertiary",
-                            "max-w-[70%] lg:max-w-[40%]"
+                            "max-w-[70%] lg:max-w-[30%]"
                         )}
                     >{footer.co_desc}
                     </p>
@@ -133,15 +136,27 @@ const Footer = ({footer}: iFooterObj ) => {
                 </motion.div>{/* END: footer-col-4 */}
 
                 {/* START: footer-col-5 */}
-                <motion.p
-                    variants={fadeInDown}
+                <motion.div
                     className={classNames(
-                        "text-clr-light-tertiary text-xs",
-                        "lg:col-span-12", "lg:justify-self-center"
+                        "lg:col-span-12", 
+                        "lg:justify-self-center flex flex-col items-center"
                     )}
                 >
-                    {footer.made.title} <a href={footer.made.link.url} target="_blank" rel="noreferrer" className="font-medium hover:text-clr-green-primary">{footer.made.link.name}</a>
-                </motion.p>
+                    <Image
+                        alt="Signature Icon SVG"
+                        src="/images/quill.svg"    
+                        width={20}                   
+                        height={20}                   
+                    />
+                    <motion.p
+                        variants={fadeInDown}
+                        className={classNames(
+                            "text-clr-light-tertiary text-xs",
+                        )}
+                    >
+                        {footer.made.title} <a href={footer.made.link.url} target="_blank" rel="noreferrer" className="font-medium hover:text-clr-green-primary">{footer.made.link.name}</a>
+                    </motion.p>
+                </motion.div>
                 {/* END: footer-col-5 */}
                 
             </div>
@@ -151,84 +166,3 @@ const Footer = ({footer}: iFooterObj ) => {
 }
 export default Footer;
 //* END: footer-component
-
-// {/* START: footer-col-4 */}
-// <motion.div 
-// variants={fadeInDown}
-// className="lg:col-span-12"
-// >
-// <iframe 
-//     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1355.2182240909908!2d101.53913196965362!3d3.1936670410632653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc455e927ebb7b%3A0x89a6ac8aa7c06653!2sAir%20Tebu%20Paya%20Jaras!5e0!3m2!1sen!2smy!4v1671650129393!5m2!1sen!2smy" 
-//     allowFullScreen={true} 
-//     loading="lazy" 
-//     referrerPolicy="no-referrer-when-downgrade"
-//     className="w-full h-96 border outline-none"
-// />
-// </motion.div>
-// {/* END: footer-col-4 */}
-
-// {/* START: footer-col-5 */}
-// <motion.div
-// variants={fadeInDown}
-// className={classNames(
-//     "lg:col-start-10 lg:col-span-3"
-// )}
-// >
-
-// <h1
-//     className="font-medium"
-// >
-//     {footer.lokasi.title}
-// </h1>
-
-// <ul
-//     className="mt-5 text-clr-light-tertiary text-sm"
-// >
-//     {footer.lokasi.full_address.map(i =>
-//         <li
-//             className=""
-//             key={i.id}
-//         >
-//             {i.address}
-//         </li>
-//     )}
-    
-// </ul>
-
-// </motion.div>
-// {/* END: footer-col-5 */}
-
-// {/* START: footer-col-6 */}
-// <motion.div
-// variants={fadeInDown}
-// className={classNames(
-//     "lg:col-start-10 lg:col-span-3"
-// )}
-// >
-
-// <h1
-//     className="font-medium"
-// >
-//     {footer.schedules.title}
-// </h1>
-
-// <ul
-//     className="mt-5 text-clr-light-tertiary text-sm"
-//     role="list"
-// >
-//     {footer.schedules.schedule.map(i =>
-//         <li 
-//             key={i.id}
-//             className={classNames(
-//                 "flex justify-between mb-2 last:mb-0"
-//             )}
-//         >
-//             <span>{i.day}</span>
-//             <span>{i.time}</span>
-//         </li>
-//     )}
-    
-// </ul>
-
-// </motion.div>
-// {/* END: footer-col-6 */}
