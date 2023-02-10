@@ -57,7 +57,7 @@ const Header = () => {
                 {/* START: nav-anchor-links */}
                 <ul
                     className={classNames(
-                        "flex justify-between lg:gap-x-10 font-medium",
+                        "flex justify-between lg:gap-x-10",
                     )}
                 >
 
