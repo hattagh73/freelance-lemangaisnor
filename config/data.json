@@ -96,7 +96,7 @@
             }
         },
         "made": {
-            "title": "- Kraftangan",
+            "title": "Kraftangan",
             "link": {
                 "name": "hattaltd",
                 "url": "http://hatta.vercel.app/"
@@ -112,15 +112,15 @@
         "socials": [
             {
                 "id": 1,
-                "name": "Facebook"
+                "icon": "https://res.cloudinary.com/dltslq5fh/image/upload/v1676101222/aisnor/v3xywlogi3bzmvuzd6hb.png"
             },
             {
                 "id": 2,
-                "name": "Instagram"
+                "icon": "https://res.cloudinary.com/dltslq5fh/image/upload/v1676101222/aisnor/q8zdruo0ljsyx0vfrjov.png"
             },
             {
                 "id": 3,
-                "name": "WhatsApp"
+                "icon": "https://res.cloudinary.com/dltslq5fh/image/upload/v1676101222/aisnor/hvveduhjs9gxtlghnhk5.png"
             }
         ],
         "since": "Sejak 2020"
