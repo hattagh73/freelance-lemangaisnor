@@ -69,7 +69,7 @@ export interface iHero {
     ais_lmg?: string;
     socials: {
         id: number;
-        name: string;
+        icon: string;
     }[]
     since: string;
 }
