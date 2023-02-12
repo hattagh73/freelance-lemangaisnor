@@ -107,7 +107,6 @@
         "title1": "Lemang Panas",
         "title2": "Paya Jaras",
         "desc1": "Antara lemang yang terbaik di Sungai Buloh dan Paya Jaras",
-        "desc2": "Jemput singgah ke gerai kami",
         "info": "Info",
         "socials": [
             {
@@ -123,7 +122,7 @@
                 "icon": "https://res.cloudinary.com/dltslq5fh/image/upload/v1676101222/aisnor/hvveduhjs9gxtlghnhk5.png"
             }
         ],
-        "since": "Sejak 2020"
+        "lemang_panas": "Lemang Panas"
     },
     "about": {
         "mini_title": "Tentang",
