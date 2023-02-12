@@ -100,89 +100,42 @@ const SHero = ({hero}: iSHero) => {
                     <motion.ul 
                         className="flex items-center gap-x-5"
                     >
-                        
-                        <motion.li
-                            initial = {{
-                                rotate: 0,
-                                scale: 1
-                            }}
 
-                            whileHover = {{
-                                rotate: 360,
-                                scale: 1.4
-                            }}
-                            transition = {{
-                                delay: 0.1,
-                                duration: 0.3,
-                                ease: "easeIn"
-                            }}
-                            className=""
-                        >
-                            <Image 
-                                alt="Hero social icon"
-                                // src="/images/fa-whatsapp.svg"
-                                src="/images/sc-ig-2.png"
-                                height={512}
-                                width={512}
-                                className="w-6 h-6"
-                            />
-                        </motion.li>
+                        {   hero.socials.map((i, index) =>
 
-                        <motion.li
-                            initial = {{
-                                rotate: 0,
-                                scale: 1
-                            }}
+                            <motion.li
+                                initial = {{
+                                    rotate: 0,
+                                    scale: 1
+                                }}
 
-                            whileHover = {{
-                                rotate: 360,
-                                scale: 1.4
-                            }}
-                            transition = {{
-                                delay: 0.1,
-                                duration: 0.3,
-                                ease: "easeIn"
-                            }}
-                            className=""
-                        >
-                            <Image 
-                                alt="Hero social icon"
-                                src="/images/sc-wa-2.png"
-                                height={512}
-                                width={512}
-                                className="w-6 h-6"
-                            />
-                        </motion.li>
-                        
-                        <motion.li
-                            initial = {{
-                                rotate: 0,
-                                scale: 1
-                            }}
+                                whileHover = {{
+                                    rotate: 360,
+                                    scale: 1.4
+                                }}
+                                transition = {{
+                                    delay: 0.1,
+                                    duration: 0.3,
+                                    ease: "easeIn"
+                                }}
+                                className=""
+                                key={i.id}
+                            >
+                                <Image 
+                                    alt="Hero social icon"
+                                    // src="/images/fa-whatsapp.svg"
+                                    src={i.icon}
+                                    height={512}
+                                    width={512}
+                                    className="w-6 h-6"
+                                />
+                            </motion.li>
 
-                            whileHover = {{
-                                rotate: 360,
-                                scale: 1.4
-                            }}
-                            transition = {{
-                                delay: 0.1,
-                                duration: 0.3,
-                                ease: "easeIn"
-                            }}
-                            className=""
-                        >
-                            <Image 
-                                alt="Hero social icon"
-                                src="/images/sc-fb-2.png"
-                                height={512}
-                                width={512}
-                                className="w-6 h-6"
-                            />
-                        </motion.li>
+                        )}
 
                     </motion.ul>
 
-                    <p className="mt-3 text-sm">Lemang Panas</p>
+                    <p className="mt-3 text-sm">{hero.lemang_panas}</p>
 
                 </motion.div>
 
