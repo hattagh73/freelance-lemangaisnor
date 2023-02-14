@@ -64,14 +64,13 @@ export interface iHero {
     title1: string;
     title2: string;
     desc1: string;
-    desc2: string;
     info: string;
     ais_lmg?: string;
     socials: {
         id: number;
         icon: string;
     }[]
-    since: string;
+    lemang_panas: string;
 }
 
 //* TYPE: component-section-about
